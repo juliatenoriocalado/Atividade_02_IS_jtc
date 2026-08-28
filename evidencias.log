@@ -1,0 +1,125 @@
+Script started on 2026-08-28 19:00:00-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="68" LINES="27"]
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# wa[K[Kpwd
+[?2004l/mnt/c/Users/julia/Implementação 2 - Threads
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# wh[Khoami
+[?2004lroot
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# gcc mand el[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[Kand elbrot.c -o mandelbrot
+[?2004l[01m[Kmandelbrot.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmandelbrot.c:27:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kvalor[m[K’ undeclared (first use in this function); did you mean ‘[01m[Kvalloc[m[K’?
+   27 |     [01;31m[Kvalor[m[K = strtol(); //strtol quebra os valores e eles ficam como indices
+      |     [01;31m[K^~~~~[m[K
+      |     [32m[Kvalloc[m[K
+[01m[Kmandelbrot.c:27:5:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Kmandelbrot.c:27:13:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Kstrtol[m[K’
+   27 |     valor = [01;31m[Kstrtol[m[K(); //strtol quebra os valores e eles ficam como indices
+      |             [01;31m[K^~~~~~[m[K
+In file included from [01m[Kmandelbrot.c:2[m[K:
+[01m[K/usr/include/stdlib.h:177:17:[m[K [01;36m[Knote: [m[Kdeclared here
+  177 | extern long int [01;36m[Kstrtol[m[K (const char *__restrict __nptr,
+      |                 [01;36m[K^~~~~~[m[K
+[01m[Kmandelbrot.c:32:9:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Kstrtol[m[K’
+   32 |     if ([01;31m[Kstrtol[m[K(argv[1])){
+      |         [01;31m[K^~~~~~[m[K
+[01m[K/usr/include/stdlib.h:177:17:[m[K [01;36m[Knote: [m[Kdeclared here
+  177 | extern long int [01;36m[Kstrtol[m[K (const char *__restrict __nptr,
+      |                 [01;36m[K^~~~~~[m[K
+[01m[Kmandelbrot.c:33:17:[m[K [01;35m[Kwarning: [m[Kassignment to ‘[01m[Kint[m[K’ from ‘[01m[Kchar *[m[K’ makes integer from pointer without a cast [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wint-conversion-Wint-conversion]8;;[m[K]
+   33 |         largura [01;35m[K=[m[K argv[1];
+      |                 [01;35m[K^[m[K
+[01m[Kmandelbrot.c:36:14:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Kstrtol[m[K’
+   36 |     else if ([01;31m[Kstrtol[m[K(argv[2])){
+      |              [01;31m[K^~~~~~[m[K
+[01m[K/usr/include/stdlib.h:177:17:[m[K [01;36m[Knote: [m[Kdeclared here
+  177 | extern long int [01;36m[Kstrtol[m[K (const char *__restrict __nptr,
+      |                 [01;36m[K^~~~~~[m[K
+[01m[Kmandelbrot.c:37:16:[m[K [01;35m[Kwarning: [m[Kassignment to ‘[01m[Kint[m[K’ from ‘[01m[Kchar *[m[K’ makes integer from pointer without a cast [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wint-conversion-Wint-conversion]8;;[m[K]
+   37 |         altura [01;35m[K=[m[K argv[2];
+      |                [01;35m[K^[m[K
+[01m[Kmandelbrot.c:40:14:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Kstrtol[m[K’
+   40 |     else if ([01;31m[Kstrtol[m[K(argv[2])){
+      |              [01;31m[K^~~~~~[m[K
+[01m[K/usr/include/stdlib.h:177:17:[m[K [01;36m[Knote: [m[Kdeclared here
+  177 | extern long int [01;36m[Kstrtol[m[K (const char *__restrict __nptr,
+      |                 [01;36m[K^~~~~~[m[K
+[01m[Kmandelbrot.c:41:23:[m[K [01;35m[Kwarning: [m[Kassignment to ‘[01m[Kint[m[K’ from ‘[01m[Kchar *[m[K’ makes integer from pointer without a cast [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wint-conversion-Wint-conversion]8;;[m[K]
+   41 |         max_interacoes[01;35m[K=[m[K argv[3];
+      |                       [01;35m[K^[m[K
+[01m[Kmandelbrot.c:44:14:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Kstrtol[m[K’
+   44 |     else if ([01;31m[Kstrtol[m[K(argv[3])){
+      |              [01;31m[K^~~~~~[m[K
+[01m[K/usr/include/stdlib.h:177:17:[m[K [01;36m[Knote: [m[Kdeclared here
+  177 | extern long int [01;36m[Kstrtol[m[K (const char *__restrict __nptr,
+      |                 [01;36m[K^~~~~~[m[K
+[01m[Kmandelbrot.c:45:25:[m[K [01;35m[Kwarning: [m[Kassignment to ‘[01m[Kint[m[K’ from ‘[01m[Kchar *[m[K’ makes integer from pointer without a cast [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wint-conversion-Wint-conversion]8;;[m[K]
+   45 |         numeroDeThreads [01;35m[K=[m[K argv[3];
+      |                         [01;35m[K^[m[K
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/juli
+a/Implementação 2 - Threads# [K[A[K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/juli
+a/Implementação 2 - Threads# [K[A[K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/juli
+a/Implementação 2 - Threads# [K[A[K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/juli
+a/Implementação 2 - Threads# [K[A[K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/juli
+a/Implementação 2 - Threads# [K[A[K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/juli
+a/Implementação 2 - Threads# [K[A[K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# gcc mand elbrot.c -o mandelbrot.c[K[K
+[?2004l[01m[Kmandelbrot.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmandelbrot.c:34:11:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kfim[m[K’ with no linkage
+   34 |     char *[01;31m[Kfim[m[K;
+      |           [01;31m[K^~~[m[K
+[01m[Kmandelbrot.c:25:11:[m[K [01;36m[Knote: [m[Kprevious declaration of ‘[01m[Kfim[m[K’ with type ‘[01m[Kchar *[m[K’
+   25 |     char *[01;36m[Kfim[m[K;
+      |           [01;36m[K^~~[m[K
+[01m[Kmandelbrot.c:35:10:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kvalor[m[K’ with no linkage
+   35 |     long [01;31m[Kvalor[m[K;
+      |          [01;31m[K^~~~~[m[K
+[01m[Kmandelbrot.c:26:10:[m[K [01;36m[Knote: [m[Kprevious declaration of ‘[01m[Kvalor[m[K’ with type ‘[01m[Klong int[m[K’
+   26 |     long [01;36m[Kvalor[m[K;
+      |          [01;36m[K^~~~~[m[K
+[01m[Kmandelbrot.c:52:14:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Kstrtol[m[K’
+   52 |     else if ([01;31m[Kstrtol[m[K(argv[2])){
+      |              [01;31m[K^~~~~~[m[K
+In file included from [01m[Kmandelbrot.c:2[m[K:
+[01m[K/usr/include/stdlib.h:177:17:[m[K [01;36m[Knote: [m[Kdeclared here
+  177 | extern long int [01;36m[Kstrtol[m[K (const char *__restrict __nptr,
+      |                 [01;36m[K^~~~~~[m[K
+[01m[Kmandelbrot.c:53:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kaltura[m[K’ undeclared (first use in this function)
+   53 |         [01;31m[Kaltura[m[K = argv[2];
+      |         [01;31m[K^~~~~~[m[K
+[01m[Kmandelbrot.c:53:9:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Kmandelbrot.c:56:14:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Kstrtol[m[K’
+   56 |     else if ([01;31m[Kstrtol[m[K(argv[2])){
+      |              [01;31m[K^~~~~~[m[K
+[01m[K/usr/include/stdlib.h:177:17:[m[K [01;36m[Knote: [m[Kdeclared here
+  177 | extern long int [01;36m[Kstrtol[m[K (const char *__restrict __nptr,
+      |                 [01;36m[K^~~~~~[m[K
+[01m[Kmandelbrot.c:57:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_interacoes[m[K’ undeclared (first use in this function)
+   57 |         [01;31m[Kmax_interacoes[m[K= argv[3];
+      |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[Kmandelbrot.c:60:14:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Kstrtol[m[K’
+   60 |     else if ([01;31m[Kstrtol[m[K(argv[3])){
+      |              [01;31m[K^~~~~~[m[K
+[01m[K/usr/include/stdlib.h:177:17:[m[K [01;36m[Knote: [m[Kdeclared here
+  177 | extern long int [01;36m[Kstrtol[m[K (const char *__restrict __nptr,
+      |                 [01;36m[K^~~~~~[m[K
+[01m[Kmandelbrot.c:61:9:[m[K [01;31m[Kerror: [m[K‘[01m[KnumeroDeThreads[m[K’ undeclared (first use in this function)
+   61 |         [01;31m[KnumeroDeThreads[m[K = argv[3];
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# gcc mandelbrot.c -o mandelbrot
+[?2004l[01m[Kmandelbrot.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmandelbrot.c:34:11:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kfim[m[K’ with no linkage
+   34 |     char *[01;31m[Kfim[m[K;
+      |           [01;31m[K^~~[m[K
+[01m[Kmandelbrot.c:25:11:[m[K [01;36m[Knote: [m[Kprevious declaration of ‘[01m[Kfim[m[K’ with type ‘[01m[Kchar *[m[K’
+   25 |     char *[01;36m[Kfim[m[K;
+      |           [01;36m[K^~~[m[K
+[01m[Kmandelbrot.c:35:10:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kvalor[m[K’ with no linkage
+   35 |     long [01;31m[Kvalor[m[K;
+      |          [01;31m[K^~~~~[m[K
+[01m[Kmandelbrot.c:26:10:[m[K [01;36m[Knote: [m[Kprevious declaration of ‘[01m[Kvalor[m[K’ with type ‘[01m[Klong int[m[K’
+   26 |     long [01;36m[Kvalor[m[K;
+      |          [01;36m[K^~~~~[m[K
+[01m[Kmandelbrot.c:61:10:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Kstrtol[m[K’
+   61 |      if ([01;31m[Kstrtol[m[K(argv[2])){
+      |          [01;31m[K^~~~~~[m[K
+In file included from [01m[Kmandelbrot.c:2[m[K:
+[01m[K/usr/include/stdlib.h:177:17:[m[K [01;36m[Knote: [m[Kdeclared here
+  177 |
