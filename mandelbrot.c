@@ -149,7 +149,7 @@ int main(int argc, char *argv[]){
     int *imagem = malloc(quantidade_pixels * sizeof(int));
 
     if (imagem == NULL){
-        fprintf(stderr, "numero de threads errado.\n");
+        fprintf(stderr, "erro ao alocar memoria.\n");
         exit(1);
     }
 
@@ -185,6 +185,25 @@ int main(int argc, char *argv[]){
         
     }
 
+    FILE *arquivo;
+
+    arquivo = fopen("mandelbrot_jtc_serial.pgm", "w");
+
+    if (arquivo == NULL){
+        fprintf(stderr, "erro ao abrir ou ao criar arquivo.\n");
+        free(imagem);
+        exit(1);
+    }
+
+    for (int linha=0; linha<dados.altura; linha++){
+        for (int coluna=0; coluna<dados.largura; coluna++){
+            int indice = (linha * dados.largura) + coluna;
+            fprintf(arquivo, "%d ", imagem[indice]);
+        }
+        fprintf(arquivo, "\n");
+    }
+
+    fclose(arquivo);
     free(imagem);
 
     return 0;
