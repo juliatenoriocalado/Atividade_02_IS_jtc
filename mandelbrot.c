@@ -29,7 +29,6 @@ int main(int argc, char *argv[]){
     //char **endptr contem um ponteiro para ponteiro de caractere, se não for NULL a função guarda o endereço do primeiro caractere não interpretado como parte do número. Isso permite analisar strings com múltiplos valores e detectar erros de conversão
     //int base é a base numérica para a conversão
     //a função retorna o valor inteiro convertido, se estourar retorna LONG_MAX ou LONG_MIN, e define a variavel como errno para ERANGE.
-    //se nenhuma conversão foi feita retorna 0 e define a variável global errno para EINVAL
 
     valor = strtol(argv[1], &fim, 10); //strtol converte uma string pra long
 
@@ -92,25 +91,25 @@ int main(int argc, char *argv[]){
     valor = strtol(argv[3], &fim, 10);
 
     if (fim == argv[3]){ //fim == argv[3] não conseguiu ler nem o primeiro caractere
-        fprintf(stderr, "Altura invalida.\n");
+        fprintf(stderr, "Numero maximo de iteracoes invalido.\n");
         exit(1);
         //não conseguiu converter
     }
 
     if (*fim != '\0'){
-        fprintf(stderr, "Altura invalida.\n");
+        fprintf(stderr, "maximo de iteracoes.\n");
         exit(1);
         //sobraram caracteres que nao foram convertidos na leitura
     }
 
     if (errno == ERANGE){
-        fprintf(stderr, "Altura fora do limite permitido.\n");
+        fprintf(stderr, "maximo de iteracoes.\n");
         exit(1);
         //estourou passou do limite
     }
 
     if (valor <= 0 || valor > INT_MAX){
-        fprintf(stderr, "ALtura inválida.\n");
+        fprintf(stderr, "maximo de iteracoes.\n");
         exit(1);
         //atingiu o máximo
     }
@@ -119,33 +118,74 @@ int main(int argc, char *argv[]){
 
     errno = 0;
 
-    strtol(argv[4], &fim, 10);
+    valor = strtol(argv[4], &fim, 10);
 
     if (fim == argv[4]){ //fim == argv[4] não conseguiu ler nem o primeiro caractere
-        fprintf(stderr, "Altura invalida.\n");
+        fprintf(stderr, "numero de threads errado.\n");
         exit(1);
         //não conseguiu converter
     }
 
     if (*fim != '\0'){
-        fprintf(stderr, "Altura invalida.\n");
+        fprintf(stderr, "numero de threads errado.\n");
         exit(1);
-        //sobraram caracteres que nao foram convertidos na leitura
     }
 
     if (errno == ERANGE){
-        fprintf(stderr, "Altura fora do limite permitido.\n");
+        fprintf(stderr, "numero de threads errado.\n");
         exit(1);
         //estourou passou do limite
     }
 
     if (valor <= 0 || valor > INT_MAX){
-        fprintf(stderr, "ALtura inválida.\n");
+        fprintf(stderr, "numero de threads errado.\n");
         exit(1);
         //atingiu o máximo
     }
 
     dados.numeroDeThreads = (int) valor;
+
+    size_t quantidade_pixels = (size_t) dados.largura * dados.altura;
+    int *imagem = malloc(quantidade_pixels * sizeof(int));
+
+    if (imagem == NULL){
+        fprintf(stderr, "numero de threads errado.\n");
+        exit(1);
+    }
+
+    for (int linha=0; linha<dados.altura; linha++){
+        for (int coluna=0; coluna<dados.largura; coluna++){
+            
+            int indice = linha * dados.largura + coluna;
+
+            double c_real = -2.0 + ((double) coluna/ (dados.largura - 1)) * 3.0;
+            double c_imagem = -1.5 + ((double) linha / (dados.altura - 1)) * 3.0;
+            double z_real = 0.0;
+            double z_imagem = 0.0;
+            int iteracoes = 0;
+            
+            while (iteracoes < dados.max_interacoes){
+                double novo_real = (z_real * z_real) - (z_imagem * z_imagem) + c_real;
+                double novo_imagem = (2 * z_real * z_imagem) + c_imagem;
+
+                z_real = novo_real;
+                z_imagem = novo_imagem;
+
+                iteracoes++;
+
+                if ((z_real * z_real) + (z_imagem * z_imagem) > 4.0){ //se explodiu
+                    break;
+                }
+            }
+
+            int intensidade = (int)(((double) iteracoes / dados.max_interacoes) * 255.0);
+            imagem[indice] = intensidade;
+
+        }
+        
+    }
+
+    free(imagem);
 
     return 0;
 }
