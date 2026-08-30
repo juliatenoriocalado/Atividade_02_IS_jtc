@@ -122,4 +122,585 @@ In file included from [01m[Kmandelbrot.c:2[m[K:
       |          [01;31m[K^~~~~~[m[K
 In file included from [01m[Kmandelbrot.c:2[m[K:
 [01m[K/usr/include/stdlib.h:177:17:[m[K [01;36m[Knote: [m[Kdeclared here
-  177 |
+  177 | extern long int [01;36m[Kstrtol[m[K (const char *__restrict __nptr,
+      |                 [01;36m[K^~~~~~[m[K
+[01m[Kmandelbrot.c:62:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kaltura[m[K’ undeclared (first use in this function)
+   62 |         [01;31m[Kaltura[m[K = argv[2];
+      |         [01;31m[K^~~~~~[m[K
+[01m[Kmandelbrot.c:62:9:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Kmandelbrot.c:65:10:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Kstrtol[m[K’
+   65 |      if ([01;31m[Kstrtol[m[K(argv[2])){
+      |          [01;31m[K^~~~~~[m[K
+[01m[K/usr/include/stdlib.h:177:17:[m[K [01;36m[Knote: [m[Kdeclared here
+  177 | extern long int [01;36m[Kstrtol[m[K (const char *__restrict __nptr,
+      |                 [01;36m[K^~~~~~[m[K
+[01m[Kmandelbrot.c:66:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_interacoes[m[K’ undeclared (first use in this function)
+   66 |         [01;31m[Kmax_interacoes[m[K= argv[3];
+      |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[Kmandelbrot.c:69:10:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Kstrtol[m[K’
+   69 |      if ([01;31m[Kstrtol[m[K(argv[3])){
+      |          [01;31m[K^~~~~~[m[K
+[01m[K/usr/include/stdlib.h:177:17:[m[K [01;36m[Knote: [m[Kdeclared here
+  177 | extern long int [01;36m[Kstrtol[m[K (const char *__restrict __nptr,
+      |                 [01;36m[K^~~~~~[m[K
+[01m[Kmandelbrot.c:70:9:[m[K [01;31m[Kerror: [m[K‘[01m[KnumeroDeThreads[m[K’ undeclared (first use in this function)
+   70 |         [01;31m[KnumeroDeThreads[m[K = argv[3];
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/juli
+a/Implementação 2 - Threads# [K[A[K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/juli
+a/Implementação 2 - Threads# [K[A[K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/juli
+a/Implementação 2 - Threads# [K[A[K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# g[Kgcc mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandel[27m[7mb[27m[7mrot 800 600 1000 4[27m[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# ./mandelbrot 800 600 1000 4
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# 
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/juli
+a/Implementação 2 - Threads# [K[A[K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K/mandelbrot 800 600 1000 4[K[7m/mandel[27mb[7mrot 800 600 1000 4[27m[K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# date
+[?2004lSat Aug 29 10:53:10 -03 2026
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# owd
+[?2004lCommand 'owd' not found, did you mean:
+  command 'pwd' from deb coreutils (9.4-3ubuntu6.2)
+  command 'wod' from deb sope-bin (5.9.0-1)
+  command 'od' from deb coreutils (9.4-3ubuntu6.2)
+  command 'wd' from deb node-wikibase-cli (15.15.4-5ubuntu4)
+  command 'xwd' from deb x11-apps (7.7+11)
+Try: apt install <deb name>
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# pwd
+[?2004l/mnt/c/Users/julia/Implementação 2 - Threads
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m<cript -a evidencias.log[27m[K<cript -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# pwd
+[?2004l/mnt/c/Users/julia/Implementação 2 - Threads
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# whoa<hoam[Ki[K
+[?2004lroot
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# date
+[?2004lSat Aug 29 10:54:02 -03 2026
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# doublr[K[K[K[K[K[K[K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# datewhoami[3Ppwd./processflowrm -f saida.txtcd /mnt/c/Users/julia/Atividade_01_ISdate[Kwhoami[3Ppwdscript -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# gcc mandelbrot.c -o mandelbrot
+[?2004l[01m[Kmandelbrot.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmandelbrot.c:163:35:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ undeclared (first use in this function)
+  163 |             double intensidade = ([01;31m[Ki[m[K/dados.max_interacoes) * 255
+      |                                   [01;31m[K^[m[K
+[01m[Kmandelbrot.c:163:35:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Kmandelbrot.c:164:13:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Kimagem[m[K’
+  164 |             [01;31m[Kimagem[m[K[j] = intensidade;
+      |             [01;31m[K^~~~~~[m[K
+[01m[Kmandelbrot.c:186:17:[m[K [01;31m[Kerror: [m[Kconflicting types for ‘[01m[Kintensidade[m[K’; have ‘[01m[Kint[m[K’
+  186 |             int [01;31m[Kintensidade[m[K = (int)(((double) iteracoes / dados.max_interacoes) * 255.0);
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[Kmandelbrot.c:163:20:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kintensidade[m[K’ with type ‘[01m[Kdouble[m[K’
+  163 |             double [01;36m[Kintensidade[m[K = (i/dados.max_interacScript started on 2026-08-29 10:53:48-03:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="68" LINES="1"]
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# pwd
+[?2004l/mnt/c/Users/julia/Implementação 2 - Threads
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# whoa<hoam[Ki[K
+[?2004lroot
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# date
+[?2004lSat Aug 29 10:54:02 -03 2026
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# doublr[K[K[K[K[K[K[K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# datewhoami[3Ppwd./processflowrm -f saida.txtcd /mnt/c/Users/julia/Atividade_01_ISdate[Kwhoami[3Ppwdscript -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# gcc mandelbrot.c -o mandelbrot
+[?2004l[01m[Kmandelbrot.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmandelbrot.c:163:35:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ undeclared (first use in this function)
+  163 |             double intensidade = ([01;31m[Ki[m[K/dados.max_interacoes) * 255
+      |                                   [01;31m[K^[m[K
+[01m[Kmandelbrot.c:163:35:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Kmandelbrot.c:164:13:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Kimagem[m[K’
+  164 |             [01;31m[Kimagem[m[K[j] = intensidade;
+      |             [01;31m[K^~~~~~[m[K
+[01m[Kmandelbrot.c:186:17:[m[K [01;31m[Kerror: [m[Kconflicting types for ‘[01m[Kintensidade[m[K’; have ‘[01m[Kint[m[K’
+  186 |             int [01;31m[Kintensidade[m[K = (int)(((double) iteracoes / dados.max_interacoes) * 255.0);
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[Kmandelbrot.c:163:20:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kintensidade[m[K’ with type ‘[01m[Kdouble[m[K’
+  163 |             double [01;36m[Kintensidade[m[K = (i/dados.max_interacoes) * 255
+      |                    [01;36m[K^~~~~~~~~~~[m[K
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# whoami
+[?2004lroot
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# pwd
+[?2004l/mnt/c/Users/julia/Implementação 2 - Threads
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# date
+[?2004lSat Aug 29 12:02:20 -03 2026
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 -Script started on 2026-08-29 12:01:55-03:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="102" LINES="11"]
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# gcc mandelbrot.c -o mandelbrot
+[?2004l[01m[Kmandelbrot.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmandelbrot.c:163:35:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ undeclared (first use in this function)
+  163 |             double intensidade = ([01;31m[Ki[m[K/dados.max_interacoes) * 255
+      |                                   [01;31m[K^[m[K
+[01m[Kmandelbrot.c:163:35:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Kmandelbrot.c:164:13:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Kimagem[m[K’
+  164 |             [01;31m[Kimagem[m[K[j] = intensidade;
+      |             [01;31m[K^~~~~~[m[K
+[01m[Kmandelbrot.c:186:17:[m[K [01;31m[Kerror: [m[Kconflicting types for ‘[01m[Kintensidade[m[K’; have ‘[01m[Kint[m[K’
+  186 |             int [01;31m[Kintensidade[m[K = (int)(((double) iteracoes / dados.max_interacoes) * 255.0);
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[Kmandelbrot.c:163:20:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kintensidade[m[K’ with type ‘[01m[Kdouble[m[K’
+  163 |             double [01;36m[Kintensidade[m[K = (i/dados.max_interacoes) * 255
+      |                    [01;36m[K^~~~~~~~~~~[m[K
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# whoami
+[?2004lroot
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# pwd
+[?2004l/mnt/c/Users/julia/Implementação 2 - Threads
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# date
+[?2004lSat Aug 29 12:02:20 -03 2026
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgcc -Wall -Wextra -Wpedantic mandelbrot.c [27m[7m-[27m[7mo mandelbrot[27m[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# gcc -Wall -Wextra -Wpedantic mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 10 10 100 2[27m./mandelbrot 10 10 100 2
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 10 10 banana 2[27m
+[7m./mandelbrot 10 10 100 banana[27m
+[7m./mandelbrot 10 10 0 2[27m
+[7m./mandelbrot 10 10 100 0[27m[A[A[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# ./mandelbrot 10 10 banana 2
+./mandelbrot 10 10 100 banana
+./mandelbrot 10 10 0 2
+./mandelbrot 10 10 100 0
+[?2004lNumero maximo de iteracoes invalido.
+numero de threads errado.
+maximo de iteracoes.
+ALtura inválida.
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# date
+[?2004lSat Aug 29 12:17:05 -03 2026
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/oes) * 255
+      |                    [01;36m[K^~~~~~~~~~~[m[K
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# whoami
+[?2004lroot
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# pwd
+[?2004l/mnt/c/Users/julia/Implementação 2 - Threads
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# date
+[?2004lSat Aug 29 12:02:20 -03 2026
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgcc -Wall -Wextra -Wpedantic mandelbrot.c [27m[7m-[27m[7mo mandelbrot[27m[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# gcc -Wall -Wextra -Wpedantic mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 10 10 100 2[27m./mandelbrot 10 10 100 2
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 10 10 banana 2[27m
+[7m./mandelbrot 10 10 100 banana[27m
+[7m./mandelbrot 10 10 0 2[27m
+[7m./mandelbrot 10 10 100 0[27m[A[A[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# ./mandelbrot 10 10 banana 2
+./mandelbrot 10 10 100 banana
+./mandelbrot 10 10 0 2
+./mandelbrot 10 10 100 0
+[?2004lNumero maximo de iteracoes invalido.
+numero de threads errado.
+maximo de iteracoes.
+ALtura inválida.
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# date
+[?2004lSat Aug 29 12:17:05 -03 2026
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# pwd
+[?2004l/mnt/c/Users/julia/Implementação 2 - Threads
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# whoami
+[?2004lroot
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# whoami[3Ppwddate
+[?2004lSat Aug 29 13:56:01 -03 2026
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# datewhoami
+[?2004lroot
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# whoami[2Pdatewhoami[3Ppwd
+[?2004l/mnt/c/Users/julia/Implementação 2 - Threads
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# pwdwhoami[2Pdatewhoami[3Ppwddate./mandelbrot 10 10 100 0[2P0 2100 banana[2Pbanana 2[3P100[C[Cgcc -Wall -Wextra -Wpedantic mandelbrot.c -o mandelbrot[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# date[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C Threads# [7mgcc -Wall -Wextra -Wpedantic mandelbrot.c [27m[7m-[27m[7mo mandelbrot[27m[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# gcc -Wall -Wextra -Wpedantic mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 10 10 100 2[27m./mandelbrot 10 10 100 2
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 10 10 banana 2[27m
+[7m./mandelbrot 10 10 100 banana[27m
+[7m./mandelbrot 10 10 0 2[27m
+[7m./mandelbrot 10 10 100 0[27m[A[A[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# ./mandelbrot 10 10 banana 2
+./mandelbrot 10 10 100 banana
+./mandelbrot 10 10 0 2
+./mandelbrot 10 10 100 0
+[?2004lNumero maximo de iteracoes invalido.
+numero de threads errado.
+maximo de iteracoes.
+ALtura inválida.
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# date
+[?2004lSat Aug 29 12:17:05 -03 2026
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# pwd
+[?2004l/mnt/c/Users/julia/Implementação 2 - Threads
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# whoami
+[?2004lroot
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# whoami[3Ppwddate
+[?2004lSat Aug 29 13:56:01 -03 2026
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# datewhoami
+[?2004lroot
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# whoami[2Pdatewhoami[3Ppwd
+[?2004l/mnt/c/Users/julia/Implementação 2 - Threads
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# pwdwhoami[2Pdatewhoami[3Ppwddate./mandelbrot 10 10 100 0[2P0 2100 banana[2Pbanana 2[3P100[C[Cgcc -Wall -Wextra -Wpedantic mandelbrot.c -o mandelbrot[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# date[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Ppwdwhoamigcc mandelbrot.c -o mandelbrot
+[?2004l[01m[Kmandelbrot.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmandelbrot.c:200:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kindice[m[K’ undeclared (first use in this function)
+  200 |             [01;31m[Kindice[m[K = (linha * largura) + coluna;
+      |             [01;31m[K^~~~~~[m[K
+[01m[Kmandelbrot.c:200:13:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Kmandelbrot.c:200:23:[m[K [01;31m[Kerror: [m[K‘[01m[Klinha[m[K’ undeclared (first use in this function); did you mean ‘[01m[Klinhas[m[K’?
+  200 |             indice = ([01;31m[Klinha[m[K * largura) + coluna;
+      |                       [01;31m[K^~~~~[m[K
+      |                       [32m[Klinhas[m[K
+[01m[Kmandelbrot.c:200:31:[m[K [01;31m[Kerror: [m[K‘[01m[KlaImplementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# pwd
+[?2004l/mnt/c/Users/julia/Implementação 2 - Threads
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# whoami
+[?2004lroot
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# whoami[3Ppwddate
+[?2004lSat Aug 29 13:56:01 -03 2026
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# datewhoami
+[?2004lroot
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# whoami[2Pdatewhoami[3Ppwd
+[?2004l/mnt/c/Users/julia/Implementação 2 - Threads
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# pwdwhoami[2Pdatewhoami[3Ppwddate./mandelbrot 10 10 100 0[2P0 2100 banana[2Pbanana 2[3P100[C[Cgcc -Wall -Wextra -Wpedantic mandelbrot.c -o mandelbrot[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# date[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Ppwdwhoamigcc mandelbrot.c -o mandelbrot
+[?2004l[01m[Kmandelbrot.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmandelbrot.c:200:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kindice[m[K’ undeclared (first use in this function)
+  200 |             [01;31m[Kindice[m[K = (linha * largura) + coluna;
+      |             [01;31m[K^~~~~~[m[K
+[01m[Kmandelbrot.c:200:13:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Kmandelbrot.c:200:23:[m[K [01;31m[Kerror: [m[K‘[01m[Klinha[m[K’ undeclared (first use in this function); did you mean ‘[01m[Klinhas[m[K’?
+  200 |             indice = ([01;31m[Klinha[m[K * largura) + coluna;
+      |                       [01;31m[K^~~~~[m[K
+      |                       [32m[Klinhas[m[K
+[01m[Kmandelbrot.c:200:31:[m[K [01;31m[Kerror: [m[K‘[01m[Klargura[m[K’ undeclared (first use in this function)
+  200 |             indice = (linha * [01;31m[Klargura[m[K) + coluna;
+      |                               [01;31m[K^~~~~~~[m[K
+[01m[Kmandelbrot.c:200:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kcoluna[m[K’ undeclared (first use in this function); did you mean ‘[01m[Kcolunas[m[K’?
+  200 |             indice = (linha * largura) + [01;31m[Kcoluna[m[K;
+      |                                          [01;31m[K^~~~~~[m[K
+      |                                          [32m[Kcolunas[m[K
+[01m[Kmandelbrot.c:201:28:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ undeclared (first use in this function)
+  201 |             fprintf(imagem[[01;31m[Ki[m[K]);
+      |                            [01;31m[K^[m[K
+[01m[Kmandelbrot.c:201:13:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Kfprintf[m[K’
+  201 |             [01;31m[Kfprintf[m[K(imagem[i]);
+      |             [01;31m[K^~~~~~~[m[K
+In file included from [01m[Kmandelbrot.c:1[m[K:
+[01m[K/usr/include/stdio.h:357:12:[m[K [01;36m[Knote: [m[Kdeclared here
+  357 | extern int [01;36m[Kfprintf[m[K (FILE *__restrict __stream,
+      |            [01;36m[K^~~~~~~[m[K
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# gcc mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementa[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Ppwdwhoamigcc mandelbrot.c -o mandelbrot
+[?2004l[01m[Kmandelbrot.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmandelbrot.c:200:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kindice[m[K’ undeclared (first use in this function)
+  200 |             [01;31m[Kindice[m[K = (linha * largura) + coluna;
+      |             [01;31m[K^~~~~~[m[K
+[01m[Kmandelbrot.c:200:13:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Kmandelbrot.c:200:23:[m[K [01;31m[Kerror: [m[K‘[01m[Klinha[m[K’ undeclared (first use in this function); did you mean ‘[01m[Klinhas[m[K’?
+  200 |             indice = ([01;31m[Klinha[m[K * largura) + coluna;
+      |                       [01;31m[K^~~~~[m[K
+      |                       [32m[Klinhas[m[K
+[01m[Kmandelbrot.c:200:31:[m[K [01;31m[Kerror: [m[K‘[01m[Klargura[m[K’ undeclared (first use in this function)
+  200 |             indice = (linha * [01;31m[Klargura[m[K) + coluna;
+      |                               [01;31m[K^~~~~~~[m[K
+[01m[Kmandelbrot.c:200:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kcoluna[m[K’ undeclared (first use in this function); did you mean ‘[01m[Kcolunas[m[K’?
+  200 |             indice = (linha * largura) + [01;31m[Kcoluna[m[K;
+      |                                          [01;31m[K^~~~~~[m[K
+      |                                          [32m[Kcolunas[m[K
+[01m[Kmandelbrot.c:201:28:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ undeclared (first use in this function)
+  201 |             fprintf(imagem[[01;31m[Ki[m[K]);
+      |                            [01;31m[K^[m[K
+[01m[Kmandelbrot.c:201:13:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Kfprintf[m[K’
+  201 |             [01;31m[Kfprintf[m[K(imagem[i]);
+      |             [01;31m[K^~~~~~~[m[K
+In file included from [01m[Kmandelbrot.c:1[m[K:
+[01m[K/usr/include/stdio.h:357:12:[m[K [01;36m[Knote: [m[Kdeclared here
+  357 | extern int [01;36m[Kfprintf[m[K (FILE *__restrict __stream,
+      |            [01;36m[K^~~~~~~[m[K
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# gcc mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgcc -Wall -Wextra -Wpedantic mandelbrot.c [27m[7m-[27m[7mo mandelbrot[27m[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# gcc -Wall -Wextra -Wpedantic mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 4 3 100 2[27m./mandelbrot 4 3 100 2
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mcat mandelbrot_jtc_serial.pgm[27mcat mandelbrot_jtc_serial.pgm
+[?2004l2 5 5 5 
+255 255 255 7 
+2 5 5 5 
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mscript -a evidencias.log[27mscript -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# whoami
+[?2004lroot
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# date
+[?2004lSun Aug 30 11:20:05 -03 2026
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlrgura[m[K’ undeclared (first use in this function)
+  200 |             indice = (linha * [01;31m[Klargura[m[K) + coluna;
+      |                               [01;31m[K^~~~~~~[m[K
+[01m[Kmandelbrot.c:200:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kcoluna[m[K’ undeclared (first use in this function); did you mean ‘[01m[Kcolunas[m[K’?
+  200 |             indice = (linha * largura) + [01;31m[Kcoluna[m[K;
+      |                                          [01;31m[K^~~~~~[m[K
+      |                                          [32m[Kcolunas[m[K
+[01m[Kmandelbrot.c:201:28:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ undeclared (first use in this function)
+  201 |             fprintf(imagem[[01;31m[Ki[m[K]);
+      |                            [01;31m[K^[m[K
+[01m[Kmandelbrot.c:201:13:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Kfprintf[m[K’
+  201 |             [01;31m[Kfprintf[m[K(imagem[i]);
+      |             [01;31m[K^~~~~~~[m[K
+In file included from [01m[Kmandelbrot.c:1[m[K:
+[01m[K/usr/include/stdio.h:357:12:[m[K [01;36m[Knote: [m[Kdeclared here
+  357 | extern int [01;36m[Kfprintf[m[K (FILE *__restrict __stream,
+      |            [01;36m[K^~~~~~~[m[K
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# gcc mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgcc -Wall -Wextra -Wpedantic mandelbrot.c [27m[7m-[27m[7mo mandelbrot[27m[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# gcc -Wall -Wextra -Wpedantic mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 4 3 100 2[27m./mandelbrot 4 3 100 2
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mcat mandelbrot_jtc_serial.pgm[27mcat mandelbrot_jtc_serial.pgm
+[?2004l2 5 5 5 
+255 255 255 7 
+2 5 5 5 
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mscript -a evidencias.log[27mscript -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# whoami
+[?2004lroot
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# date
+[?2004lSun Aug 30 11:20:05 -03 2026
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# pwd
+[?2004l/mnt/c/Users/julia/Implementação 2 - Threads
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgcc -Wall -Wextra -Wpedantic mandelbrot.c [27m[7m-[27m[7mo mandelbrot[27m[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# gcc -Wall -Wextra -Wpedantic mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 800 600 1000 4[27m./mandelbrot 800 600 1000 4
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mcat times.txt[27mcat times.txt
+[?2004lSerial: 0.614041
+[?2004h]0;root@PCdção 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgcc -Wall -Wextra -Wpedantic mandelbrot.c [27m[7m-[27m[7mo mandelbrot[27m[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# gcc -Wall -Wextra -Wpedantic mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 4 3 100 2[27m./mandelbrot 4 3 100 2
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mcat mandelbrot_jtc_serial.pgm[27mcat mandelbrot_jtc_serial.pgm
+[?2004l2 5 5 5 
+255 255 255 7 
+2 5 5 5 
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mscript -a evidencias.log[27mscript -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# whoami
+[?2004lroot
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# date
+[?2004lSun Aug 30 11:20:05 -03 2026
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# pwd
+[?2004l/mnt/c/Users/julia/Implementação 2 - Threads
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgcc -Wall -Wextra -Wpedantic mandelbrot.c [27m[7m-[27m[7mo mandelbrot[27m[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# gcc -Wall -Wextra -Wpedantic mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 800 600 1000 4[27m./mandelbrot 800 600 1000 4
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mcat times.txt[27mcat times.txt
+[?2004lSerial: 0.614041
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgcc -Wall -Wextra -Wpedantic mandelbrot.c [27m[7m-[27m[7mo mandelbrot[27m[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# gcc -Wall -Wextra -Wpedantic mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 800 600 1000 4[27m./mandelbrot 800 600 1000 4
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mcat times.txt[27mcat times.txt
+[?2004lSerial: 0.650044
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mls -l mandelbrot_jtc_serial.pgm[27mls -l mandelbrot_jtc_serial.pgm
+[?2004l-rwxrwxrwx 1 root root 1126966 Aug 30 11:23 [0m[01;32mmandelbrot_jtc_serial.pgm[0m
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PScript started on 2026-08-30 11:20:01-03:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="102" LINES="11"]
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# whoami
+[?2004lroot
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# date
+[?2004lSun Aug 30 11:20:05 -03 2026
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# pwd
+[?2004l/mnt/c/Users/julia/Implementação 2 - Threads
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgcc -Wall -Wextra -Wpedantic mandelbrot.c [27m[7m-[27m[7mo mandelbrot[27m[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# gcc -Wall -Wextra -Wpedantic mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 800 600 1000 4[27m./mandelbrot 800 600 1000 4
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mcat times.txt[27mcat times.txt
+[?2004lSerial: 0.614041
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgcc -Wall -Wextra -Wpedantic mandelbrot.c [27m[7m-[27m[7mo mandelbrot[27m[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# gcc -Wall -Wextra -Wpedantic mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 800 600 1000 4[27m./mandelbrot 800 600 1000 4
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mcat times.txt[27mcat times.txt
+[?2004lSerial: 0.650044
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mls -l mandelbrot_jtc_serial.pgm[27mls -l mandelbrot_jtc_serial.pgm
+[?2004l-rwxrwxrwx 1 root root 1126966 Aug 30 11:23 [0m[01;32mmandelbrot_jtc_serial.pgm[0m
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgcc -Wall -Wextra -Wpedantic mandelbrot.c [27m[7m-[27m[7mo mandelbrot[27m[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# gcc -Wall -Wextra -Wpedantic mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 800 600 1000 4[27m
+[7m./mandelbrot 1 600 1000 4[27m
+[7m./mandelbrot 800 1 1000 4[27m
+[7m./mandelbrot 800 600 1000 1[27m[A[A[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# ./mandelbrot 800 600 1000 4
+./mandelbrot 1 600 1000 4
+./mandelbrot 800 1 1000 4
+./mandelbrot 800 600 1000 1
+[?2004lLargura invalida.
+Altura inválida.
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implemia:/mnt/c/Users/julia/Implementação 2 - Threads# pwd
+[?2004l/mnt/c/Users/julia/Implementação 2 - Threads
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgcc -Wall -Wextra -Wpedantic mandelbrot.c [27m[7m-[27m[7mo mandelbrot[27m[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# gcc -Wall -Wextra -Wpedantic mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 800 600 1000 4[27m./mandelbrot 800 600 1000 4
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mcat times.txt[27mcat times.txt
+[?2004lSerial: 0.614041
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgcc -Wall -Wextra -Wpedantic mandelbrot.c [27m[7m-[27m[7mo mandelbrot[27m[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# gcc -Wall -Wextra -Wpedantic mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 800 600 1000 4[27m./mandelbrot 800 600 1000 4
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mcat times.txt[27mcat times.txt
+[?2004lSerial: 0.650044
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mls -l mandelbrot_jtc_serial.pgm[27mls -l mandelbrot_jtc_serial.pgm
+[?2004l-rwxrwxrwx 1 root root 1126966 Aug 30 11:23 [0m[01;32mmandelbrot_jtc_serial.pgm[0m
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgcc -Wall -Wextra -Wpedantic mandelbrot.c [27m[7m-[27m[7mo mandelbrot[27m[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# gcc -Wall -Wextra -Wpedantic mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 800 600 1000 4[27m
+[7m./mandelbrot 1 600 1000 4[27m
+[7m./mandelbrot 800 1 1000 4[27m
+[7m./mandelbrot 800 600 1000 1[27m[A[A[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# ./mandelbrot 800 600 1000 4
+./mandelbrot 1 600 1000 4
+./mandelbrot 800 1 1000 4
+./mandelbrot 800 600 1000 1
+[?2004lLargura invalida.
+Altura inválida.
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgit add mandelbrot.c[27mgit add mandelbrot.c
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgit commit -m "Melhora a veJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgcc -Wall -Wextra -Wpedantic mandelbrot.c [27m[7m-[27m[7mo mandelbrot[27m[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# gcc -Wall -Wextra -Wpedantic mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 800 600 1000 4[27m./mandelbrot 800 600 1000 4
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mcat times.txt[27mcat times.txt
+[?2004lSerial: 0.650044
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mls -l mandelbrot_jtc_serial.pgm[27mls -l mandelbrot_jtc_serial.pgm
+[?2004l-rwxrwxrwx 1 root root 1126966 Aug 30 11:23 [0m[01;32mmandelbrot_jtc_serial.pgm[0m
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgcc -Wall -Wextra -Wpedantic mandelbrot.c [27m[7m-[27m[7mo mandelbrot[27m[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# gcc -Wall -Wextra -Wpedantic mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 800 600 1000 4[27m
+[7m./mandelbrot 1 600 1000 4[27m
+[7m./mandelbrot 800 1 1000 4[27m
+[7m./mandelbrot 800 600 1000 1[27m[A[A[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# ./mandelbrot 800 600 1000 4
+./mandelbrot 1 600 1000 4
+./mandelbrot 800 1 1000 4
+./mandelbrot 800 600 1000 1
+[?2004lLargura invalida.
+Altura inválida.
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgit add mandelbrot.c[27mgit add mandelbrot.c
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgit commit -m "Melhora a validacao das ent[27m[7mr[27m[7madas e evita erros na alocacao da imagem"[27m[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# git commit -m "Melhora a validacao das entradas e evita erros na alocacao da imagem"
+[?2004l[main 08be202] Melhora a validacao das entradas e evita erros na alocacao da imagem
+ Committer: root <root@PCdeJlia.localdomain>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 238 insertions(+), 209 deletions(-)
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementaç�CdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgcc -Wall -Wextra -Wpedantic mandelbrot.c [27m[7m-[27m[7mo mandelbrot[27m[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# gcc -Wall -Wextra -Wpedantic mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 800 600 1000 4[27m
+[7m./mandelbrot 1 600 1000 4[27m
+[7m./mandelbrot 800 1 1000 4[27m
+[7m./mandelbrot 800 600 1000 1[27m[A[A[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# ./mandelbrot 800 600 1000 4
+./mandelbrot 1 600 1000 4
+./mandelbrot 800 1 1000 4
+./mandelbrot 800 600 1000 1
+[?2004lLargura invalida.
+Altura inválida.
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgit add mandelbrot.c[27mgit add mandelbrot.c
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgit commit -m "Melhora a validacao das ent[27m[7mr[27m[7madas e evita erros na alocacao da imagem"[27m[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# git commit -m "Melhora a validacao das entradas e evita erros na alocacao da imagem"
+[?2004l[main 08be202] Melhora a validacao das entradas e evita erros na alocacao da imagem
+ Committer: root <root@PCdeJlia.localdomain>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 238 insertions(+), 209 deletions(-)
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgit commit -m "Melhora a validacao das ent[27m[7mr[27m[7madas e evita erros na alocacao da imagem"[27m[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# git commit -m "Melhora a validacao das entradas e evita erros na alocacao da imagem"
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   evidencias.log[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mmandelbrot[m
+	[31mmandelbrot_jtc_serial.pgm[m
+	[31mtimes.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgit commit -m "Melhora a validacao das ent[27m[7mr[27m[7madas e evita erros na alocacao da imagem"[27m[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# git commit -m "Melhora a validacao das entradas e evita erros na alocacao da imagem"
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git pusentação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgit add mandelbrot.c[27mgit add mandelbrot.c
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgit commit -m "Melhora a validacao das ent[27m[7mr[27m[7madas e evita erros na alocacao da imagem"[27m[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# git commit -m "Melhora a validacao das entradas e evita erros na alocacao da imagem"
+[?2004l[main 08be202] Melhora a validacao das entradas e evita erros na alocacao da imagem
+ Committer: root <root@PCdeJlia.localdomain>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 238 insertions(+), 209 deletions(-)
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgit commit -m "Melhora a validacao das ent[27m[7mr[27m[7madas e evita erros na alocacao da imagem"[27m[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# git commit -m "Melhora a validacao das entradas e evita erros na alocacao da imagem"
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   evidencias.log[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mmandelbrot[m
+	[31mmandelbrot_jtc_serial.pgm[m
+	[31mtimes.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgit commit -m "Melhora a validacao das ent[27m[7mr[27m[7madas e evita erros na alocacao da imagem"[27m[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# git commit -m "Melhora a validacao das entradas e evita erros na alocacao da imagem"
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   evidencias.log[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mmandelbrot[m
+	[31mmandelbrot_jtc_serial.pgm[m
+	[31mtimes.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# git push
+[?2004lUsername for 'https://github.com': gcc -Wall -Wextra -Wpedantic -fopenmp mandelbrot.c -o mandelbrot
+Password for 'https://gcc%20-Wall%20-Wextra%20-Wpedantic%20-fopenmp%20mandelbrot.c%20-o%20mandelbrot@github.com': 
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgcc -Wall -Wextra -Wpedantic -fopenmp mandelbrot.alidacao das ent[27m[7mr[27m[7madas e evita erros na alocacao da imagem"[27m[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# git commit -m "Melhora a validacao das entradas e evita erros na alocacao da imagem"
+[?2004l[main 08be202] Melhora a validacao das entradas e evita erros na alocacao da imagem
+ Committer: root <root@PCdeJlia.localdomain>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 238 insertions(+), 209 deletions(-)
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgit commit -m "Melhora a validacao das ent[27m[7mr[27m[7madas e evita erros na alocacao da imagem"[27m[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# git commit -m "Melhora a validacao das entradas e evita erros na alocacao da imagem"
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   evidencias.log[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mmandelbrot[m
+	[31mmandelbrot_jtc_serial.pgm[m
+	[31mtimes.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgit commit -m "Melhora a validacao das ent[27m[7mr[27m[7madas e evita erros na alocacao da imagem"[27m[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# git commit -m "Melhora a validacao das entradas e evita erros na alocacao da imagem"
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   evidencias.log[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mmandelbrot[m
+	[31mmandelbrot_jtc_serial.pgm[m
+	[31mtimes.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# git push
+[?2004lUsername for 'https://github.com': gcc -Wall -Wextra -Wpedantic -fopenmp mandelbrot.c -o mandelbrot
+Password for 'https://gcc%20-Wall%20-Wextra%20-Wpedantic%20-fopenmp%20mandelbrot.c%20-o%20mandelbrot@github.com': 
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgcc -Wall -Wextra -Wpedantic -fopenmp mandelbrot.c -o mandelbrot[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -Wall -Wextra -Wpedantic -fopenmp mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 800 600 1000 4[27m./mandelbrot 800 600 1000 4
+[?2004l[?2004h]0;root@PCdeJ
