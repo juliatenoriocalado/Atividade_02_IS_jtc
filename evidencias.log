@@ -703,4 +703,81 @@ no changes added to commit (use "git add" and/or "git commit -a")
 Password for 'https://gcc%20-Wall%20-Wextra%20-Wpedantic%20-fopenmp%20mandelbrot.c%20-o%20mandelbrot@github.com': 
 [?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgcc -Wall -Wextra -Wpedantic -fopenmp mandelbrot.c -o mandelbrot[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -Wall -Wextra -Wpedantic -fopenmp mandelbrot.c -o mandelbrot
 [?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 800 600 1000 4[27m./mandelbrot 800 600 1000 4
-[?2004l[?2004h]0;root@PCdeJ
+[?2004l[?2004h]0;root@PCdeJ�o 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgit commit -m "Melhora a validacao das ent[27m[7mr[27m[7madas e evita erros na alocacao da imagem"[27m[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# git commit -m "Melhora a validacao das entradas e evita erros na alocacao da imagem"
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   evidencias.log[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mmandelbrot[m
+	[31mmandelbrot_jtc_serial.pgm[m
+	[31mtimes.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgit commit -m "Melhora a validacao das ent[27m[7mr[27m[7madas e evita erros na alocacao da imagem"[27m[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# git commit -m "Melhora a validacao das entradas e evita erros na alocacao da imagem"
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   evidencias.log[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mmandelbrot[m
+	[31mmandelbrot_jtc_serial.pgm[m
+	[31mtimes.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# git push
+[?2004lUsername for 'https://github.com': gcc -Wall -Wextra -Wpedantic -fopenmp mandelbrot.c -o mandelbrot
+Password for 'https://gcc%20-Wall%20-Wextra%20-Wpedantic%20-fopenmp%20mandelbrot.c%20-o%20mandelbrot@github.com': 
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgcc -Wall -Wextra -Wpedantic -fopenmp mandelbrot.c -o mandelbrot[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -Wall -Wextra -Wpedantic -fopenmp mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 800 600 1000 4[27m./mandelbrot 800 600 1000 4
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm[27mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mcat times.txt[27mcat times.txt
+[?2004lSerial: 0.476520
+OpenMP: 0.281562
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mscript -a evidencias.log[27mscript -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implemenh" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   evidencias.log[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mmandelbrot[m
+	[31mmandelbrot_jtc_serial.pgm[m
+	[31mtimes.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# git push
+[?2004lUsername for 'https://github.com': gcc -Wall -Wextra -Wpedantic -fopenmp mandelbrot.c -o mandelbrot
+Password for 'https://gcc%20-Wall%20-Wextra%20-Wpedantic%20-fopenmp%20mandelbrot.c%20-o%20mandelbrot@github.com': 
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgcc -Wall -Wextra -Wpedantic -fopenmp mandelbrot.c -o mandelbrot[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -Wall -Wextra -Wpedantic -fopenmp mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 800 600 1000 4[27m./mandelbrot 800 600 1000 4
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm[27mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mcat times.txt[27mcat times.txt
+[?2004lSerial: 0.476520
+OpenMP: 0.281562
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mscript -a evidencias.log[27mscript -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# wo[Khoami
+[?2004lroot
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# pwd
+[?2004l/mnt/c/Users/julia/Implementação 2 - Threads
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# date
+[?2004lSun Aug 30 14:32:18 -03 2026
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# o[K[K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[
