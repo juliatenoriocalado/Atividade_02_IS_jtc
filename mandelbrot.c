@@ -4,6 +4,7 @@
 #include <limits.h>
 #include <time.h>
 #include <stdint.h>
+#include <omp.h>
 
 typedef struct mandelbrot{
     int largura;
@@ -162,11 +163,13 @@ int main(int argc, char *argv[]){
         fprintf(stderr, "erro ao alocar memoria.\n");
         exit(1);
     }
-     
-    struct timespec inicio;
-    struct timespec fim_tempo;
 
-    clock_gettime(CLOCK_MONOTONIC, &inicio);
+    struct timespec inicio_serial;
+    struct timespec fim_serial;
+    struct timespec inicio_openmp;
+    struct timespec fim_openmp;
+
+    clock_gettime(CLOCK_MONOTONIC, &inicio_serial);
 
     for (int linha=0; linha<dados.altura; linha++){
         for (int coluna=0; coluna<dados.largura; coluna++){
@@ -199,19 +202,21 @@ int main(int argc, char *argv[]){
         }    
     }
 
-    clock_gettime(CLOCK_MONOTONIC, &fim_tempo);
+    clock_gettime(CLOCK_MONOTONIC, &fim_serial);
 
     double tempo_serial =
-        (fim_tempo.tv_sec - inicio.tv_sec) +
-        (fim_tempo.tv_nsec - inicio.tv_nsec) / 1000000000.0;
+        (fim_serial.tv_sec - inicio_serial.tv_sec) +
+        (fim_serial.tv_nsec - inicio_serial.tv_nsec) / 1000000000.0;
 
     FILE *arquivo;
     arquivo = fopen("mandelbrot_jtc_serial.pgm", "w");
+
     if (arquivo == NULL){
-        fprintf(stderr, "Erro ao abrir ou criar arquivo.\n");
+        fprintf(stderr, "Erro ao abrir ou criar arquivo serial.\n");
         free(imagem);
         exit(1);
     }
+
     for (int linha = 0; linha < dados.altura; linha++){
         for (int coluna = 0; coluna < dados.largura; coluna++){
             int indice = linha * dados.largura + coluna;
@@ -222,6 +227,63 @@ int main(int argc, char *argv[]){
 
     fclose(arquivo);
 
+    clock_gettime(CLOCK_MONOTONIC, &inicio_openmp);
+    #pragma omp parallel for num_threads(dados.numeroDeThreads)
+
+    for (int linha=0; linha<dados.altura; linha++){
+        for (int coluna=0; coluna<dados.largura; coluna++){
+            
+            int indice = linha * dados.largura + coluna;
+
+            double c_real = -2.0 + ((double) coluna/ (dados.largura - 1)) * 3.0;
+            double c_imagem = -1.5 + ((double) linha / (dados.altura - 1)) * 3.0;
+            double z_real = 0.0;
+            double z_imagem = 0.0;
+            int iteracoes = 0;
+            
+            while (iteracoes < dados.max_interacoes){
+                double novo_real = (z_real * z_real) - (z_imagem * z_imagem) + c_real;
+                double novo_imagem = (2 * z_real * z_imagem) + c_imagem;
+
+                z_real = novo_real;
+                z_imagem = novo_imagem;
+
+                iteracoes++;
+
+                if ((z_real * z_real) + (z_imagem * z_imagem) > 4.0){ //se explodiu
+                    break;
+                }
+            }
+
+            int intensidade = (int)(((double) iteracoes / dados.max_interacoes) * 255.0);
+            imagem[indice] = intensidade;
+
+        }    
+    }
+
+    clock_gettime(CLOCK_MONOTONIC, &fim_openmp);
+
+    double tempo_openmp = (fim_openmp.tv_sec - inicio_openmp.tv_sec) + (fim_openmp.tv_nsec - inicio_openmp.tv_nsec) / 1000000000.0;
+ 
+    arquivo = fopen("mandelbrot_jtc_openmp.pgm", "w");
+
+    if (arquivo == NULL){
+        fprintf(stderr, "Erro ao abrir ou criar arquivo PGM.\n");
+        free(imagem);
+        exit(1);
+    }
+
+    for (int linha = 0; linha < dados.altura; linha++){
+        for (int coluna = 0; coluna < dados.largura; coluna++){
+            int indice = linha * dados.largura + coluna;
+            fprintf(arquivo, "%d ", imagem[indice]);
+        }
+        fprintf(arquivo, "\n");
+    }
+
+    fclose(arquivo);
+ 
+ 
     FILE *arquivo_tempos;
     arquivo_tempos = fopen("times.txt", "w");
 
@@ -232,6 +294,7 @@ int main(int argc, char *argv[]){
     }
 
     fprintf(arquivo_tempos, "Serial: %f\n", tempo_serial);
+    fprintf(arquivo_tempos, "OpenMP: %f\n", tempo_openmp);
     fclose(arquivo_tempos);
     free(imagem);
 
