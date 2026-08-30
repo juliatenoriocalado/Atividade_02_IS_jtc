@@ -803,4 +803,378 @@ OpenMP: 0.281562
 cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm
 cat times.txt
 [?2004lSerial: 0.823611
-OpenMP:
+OpenMP:lia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm[27mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mcat times.txt[27mcat times.txt
+[?2004lSerial: 0.476520
+OpenMP: 0.281562
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mscript -a evidencias.log[27mscript -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# wo[Khoami
+[?2004lroot
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# pwd
+[?2004l/mnt/c/Users/julia/Implementação 2 - Threads
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# date
+[?2004lSun Aug 30 14:32:18 -03 2026
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# o[K[K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 800 600 1000 4[27m./mandelbrot 800 600 1000 4
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm[27m
+[7mcat times.txt[27m[A[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm
+cat times.txt
+[?2004lSerial: 0.823611
+OpenMP: 0.396162
+Pthreads1: 0.405683
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdScript started on 2026-08-30 14:32:14-03:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="140" LINES="8"]
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# wo[Khoami
+[?2004lroot
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# pwd
+[?2004l/mnt/c/Users/julia/Implementação 2 - Threads
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# date
+[?2004lSun Aug 30 14:32:18 -03 2026
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# o[K[K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 800 600 1000 4[27m./mandelbrot 800 600 1000 4
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm[27m
+[7mcat times.txt[27m[A[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm
+cat times.txt
+[?2004lSerial: 0.823611
+OpenMP: 0.396162
+Pthreads1: 0.405683
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 800 600 1000 4[27m./mandelbrot 800 600 1000 4
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm[27m
+[7mcat times.txt[27m[A[A[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgmtação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# wo[Khoami
+[?2004lroot
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# pwd
+[?2004l/mnt/c/Users/julia/Implementação 2 - Threads
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# date
+[?2004lSun Aug 30 14:32:18 -03 2026
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# o[K[K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 800 600 1000 4[27m./mandelbrot 800 600 1000 4
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm[27m
+[7mcat times.txt[27m[A[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm
+cat times.txt
+[?2004lSerial: 0.823611
+OpenMP: 0.396162
+Pthreads1: 0.405683
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 800 600 1000 4[27m./mandelbrot 800 600 1000 4
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm[27m
+[7mcat times.txt[27m[A[A[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm
+cat times.txt
+[?2004lSerial: 0.441286
+OpenMP: 0.240626
+Pthreads1: 0.255844
+Pthreads2: 0.12985C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 800 600 1000 4[27m./mandelbrot 800 600 1000 4
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm[27m
+[7mcat times.txt[27m[A[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm
+cat times.txt
+[?2004lSerial: 0.823611
+OpenMP: 0.396162
+Pthreads1: 0.405683
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 800 600 1000 4[27m./mandelbrot 800 600 1000 4
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm[27m
+[7mcat times.txt[27m[A[A[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm
+cat times.txt
+[?2004lSerial: 0.441286
+OpenMP: 0.240626
+Pthreads1: 0.255844
+Pthreads2: 0.129857
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 17 11 100 3[27m
+
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm[27m[A[A[A[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# ./mandelbrot 17 11 100 3
+
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# oi[K[K[7mscript -a evidencias.log[27mscript -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# whoami
+[?2004lroot
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# pwd
+[?2004l/mnt/c/Users/julia/Implementação 2 - Threads
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# dat 0.396162
+Pthreads1: 0.405683
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 800 600 1000 4[27m./mandelbrot 800 600 1000 4
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm[27m
+[7mcat times.txt[27m[A[A[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm
+cat times.txt
+[?2004lSerial: 0.441286
+OpenMP: 0.240626
+Pthreads1: 0.255844
+Pthreads2: 0.129857
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 17 11 100 3[27m
+
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm[27m[A[A[A[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# ./mandelbrot 17 11 100 3
+
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# oi[K[K[7mscript -a evidencias.log[27mscript -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# whoami
+[?2004lroot
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# pwd
+[?2004l/mnt/c/Users/julia/Implementação 2 - Threads
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# date
+[?2004lSun Aug 30 16:33:31 -03 2026
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mrm -f mandelbrot[27m
+[7mrm -f mandelbrot_jtc_serial.pgm[27m
+[7mrm -f mandelbrot_jtc_openmp.pgm[27m
+[7mrm -f mandelbrot_jtc_pthreads1.pgm[27m
+[7mrm -f mandelbrot_jtc_pthreads2.pgm[27m
+[7mrm -f times.txt[27m[A[A[A[A[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# rm -f mandelbrot
+rm -f mandelbrot_jtc_serial.pgm
+rm -f mandelbrot_jtc_openmp.pgm
+rm -f mandelbrot_jtc_pthreads1.pgm
+rm -f mandelbrot_jtc_pthreads2.pgm
+rm -f times.txt
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 800 600 1000 4[27m./mandelbrot 800 600 1000 4
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm[27m
+[7mcat times.txt[27m[A[A[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm
+cat times.txt
+[?2004lSerial: 0.441286
+OpenMP: 0.240626
+Pthreads1: 0.255844
+Pthreads2: 0.129857
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 17 11 100 3[27m
+
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm[27m[A[A[A[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# ./mandelbrot 17 11 100 3
+
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# oi[K[K[7mscript -a evidencias.log[27mscript -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# whoami
+[?2004lroot
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# pwd
+[?2004l/mnt/c/Users/julia/Implementação 2 - Threads
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# date
+[?2004lSun Aug 30 16:33:31 -03 2026
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mrm -f mandelbrot[27m
+[7mrm -f mandelbrot_jtc_serial.pgm[27m
+[7mrm -f mandelbrot_jtc_openmp.pgm[27m
+[7mrm -f mandelbrot_jtc_pthreads1.pgm[27m
+[7mrm -f mandelbrot_jtc_pthreads2.pgm[27m
+[7mrm -f times.txt[27m[A[A[A[A[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# rm -f mandelbrot
+rm -f mandelbrot_jtc_serial.pgm
+rm -f mandelbrot_jtc_openmp.pgm
+rm -f mandelbrot_jtc_pthreads1.pgm
+rm -f mandelbrot_jtc_pthreads2.pgm
+rm -f times.txt
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 800 600 1000 4[27m./mandelbrot 800 600 1000 4
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Imp
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm
+cat times.txt
+[?2004lSerial: 0.441286
+OpenMP: 0.240626
+Pthreads1: 0.255844
+Pthreads2: 0.129857
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 17 11 100 3[27m
+
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm[27m[A[A[A[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# ./mandelbrot 17 11 100 3
+
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# oi[K[K[7mscript -a evidencias.log[27mscript -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# whoami
+[?2004lroot
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# pwd
+[?2004l/mnt/c/Users/julia/Implementação 2 - Threads
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# date
+[?2004lSun Aug 30 16:33:31 -03 2026
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mrm -f mandelbrot[27m
+[7mrm -f mandelbrot_jtc_serial.pgm[27m
+[7mrm -f mandelbrot_jtc_openmp.pgm[27m
+[7mrm -f mandelbrot_jtc_pthreads1.pgm[27m
+[7mrm -f mandelbrot_jtc_pthreads2.pgm[27m
+[7mrm -f times.txt[27m[A[A[A[A[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# rm -f mandelbrot
+rm -f mandelbrot_jtc_serial.pgm
+rm -f mandelbrot_jtc_openmp.pgm
+rm -f mandelbrot_jtc_pthreads1.pgm
+rm -f mandelbrot_jtc_pthreads2.pgm
+rm -f times.txt
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 800 600 1000 4[27m./mandelbrot 800 600 1000 4
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mls -l mandelbrot_jtc_*.pgm times.txt[27mls -l mandelbrot_jtc_*.pgm times.txt
+[?2004l-rwxrwxrwx 1 root root 1126966 Aug 30 16:33 [0m[01;32mmandelbrot_jtc_openmp.pgm[0m
+-rwxrwxrwx 1 root root 1126966 Aug 30 16:34 [01;32mmandelbrot_jtc_pthreads1.pgm[0m
+-rwxrwxrwx 1 root root 1126966 Aug 30 16:34 [01;32mmandelbrot_jtc_pthreads2.pgm[0m
+-rwxrwxrwx 1 root root 1126966 Aug 30 16:33 [01;32mmandelbrot_jtc_serial.pgm[0m
+-rwxrwxrwx 1 root root      74 Aug 30 16:34 [01;32mtimes.txt[0m
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm[27m
+7
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 17 11 100 3[27m
+
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm[27m[A[A[A[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# ./mandelbrot 17 11 100 3
+
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# oi[K[K[7mscript -a evidencias.log[27mscript -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# whoami
+[?2004lroot
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# pwd
+[?2004l/mnt/c/Users/julia/Implementação 2 - Threads
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# date
+[?2004lSun Aug 30 16:33:31 -03 2026
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mrm -f mandelbrot[27m
+[7mrm -f mandelbrot_jtc_serial.pgm[27m
+[7mrm -f mandelbrot_jtc_openmp.pgm[27m
+[7mrm -f mandelbrot_jtc_pthreads1.pgm[27m
+[7mrm -f mandelbrot_jtc_pthreads2.pgm[27m
+[7mrm -f times.txt[27m[A[A[A[A[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# rm -f mandelbrot
+rm -f mandelbrot_jtc_serial.pgm
+rm -f mandelbrot_jtc_openmp.pgm
+rm -f mandelbrot_jtc_pthreads1.pgm
+rm -f mandelbrot_jtc_pthreads2.pgm
+rm -f times.txt
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 800 600 1000 4[27m./mandelbrot 800 600 1000 4
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mls -l mandelbrot_jtc_*.pgm times.txt[27mls -l mandelbrot_jtc_*.pgm times.txt
+[?2004l-rwxrwxrwx 1 root root 1126966 Aug 30 16:33 [0m[01;32mmandelbrot_jtc_openmp.pgm[0m
+-rwxrwxrwx 1 root root 1126966 Aug 30 16:34 [01;32mmandelbrot_jtc_pthreads1.pgm[0m
+-rwxrwxrwx 1 root root 1126966 Aug 30 16:34 [01;32mmandelbrot_jtc_pthreads2.pgm[0m
+-rwxrwxrwx 1 root root 1126966 Aug 30 16:33 [01;32mmandelbrot_jtc_serial.pgm[0m
+-rwxrwxrwx 1 root root      74 Aug 30 16:34 [01;32mtimes.txt[0m
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm[27m[A[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/UsScript started on 2026-08-30 16:33:26-03:00 [TERM="xterm-256color" TTY="/dev/pts/6" COLUMNS="140" LINES="8"]
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# whoami
+[?2004lroot
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# pwd
+[?2004l/mnt/c/Users/julia/Implementação 2 - Threads
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# date
+[?2004lSun Aug 30 16:33:31 -03 2026
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mrm -f mandelbrot[27m
+[7mrm -f mandelbrot_jtc_serial.pgm[27m
+[7mrm -f mandelbrot_jtc_openmp.pgm[27m
+[7mrm -f mandelbrot_jtc_pthreads1.pgm[27m
+[7mrm -f mandelbrot_jtc_pthreads2.pgm[27m
+[7mrm -f times.txt[27m[A[A[A[A[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# rm -f mandelbrot
+rm -f mandelbrot_jtc_serial.pgm
+rm -f mandelbrot_jtc_openmp.pgm
+rm -f mandelbrot_jtc_pthreads1.pgm
+rm -f mandelbrot_jtc_pthreads2.pgm
+rm -f times.txt
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 800 600 1000 4[27m./mandelbrot 800 600 1000 4
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mls -l mandelbrot_jtc_*.pgm times.txt[27mls -l mandelbrot_jtc_*.pgm times.txt
+[?2004l-rwxrwxrwx 1 root root 1126966 Aug 30 16:33 [0m[01;32mmandelbrot_jtc_openmp.pgm[0m
+-rwxrwxrwx 1 root root 1126966 Aug 30 16:34 [01;32mmandelbrot_jtc_pthreads1.pgm[0m
+-rwxrwxrwx 1 root root 1126966 Aug 30 16:34 [01;32mmandelbrot_jtc_pthreads2.pgm[0m
+-rwxrwxrwx 1 root root 1126966 Aug 30 16:33 [01;32mmandelbrot_jtc_serial.pgm[0m
+-rwxrwxrwx 1 root root      74 Aug 30 16:34 [01;32mtimes.txt[0m
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm[27m[A[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mcat times.txt[27mcat times.txt
+[?2004lSerial: 0.415703
+OpenMP: 0.213134
+Pthreads1: 0.224192
+Pthreads2: 0.156556
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 17 11 100 3[27m
+
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm[27m
+
+[7mcat times.txt[27m[A[A[A[A[A[Ae
+[?2004lSun Aug 30 16:33:31 -03 2026
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mrm -f mandelbrot[27m
+[7mrm -f mandelbrot_jtc_serial.pgm[27m
+[7mrm -f mandelbrot_jtc_openmp.pgm[27m
+[7mrm -f mandelbrot_jtc_pthreads1.pgm[27m
+[7mrm -f mandelbrot_jtc_pthreads2.pgm[27m
+[7mrm -f times.txt[27m[A[A[A[A[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# rm -f mandelbrot
+rm -f mandelbrot_jtc_serial.pgm
+rm -f mandelbrot_jtc_openmp.pgm
+rm -f mandelbrot_jtc_pthreads1.pgm
+rm -f mandelbrot_jtc_pthreads2.pgm
+rm -f times.txt
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 800 600 1000 4[27m./mandelbrot 800 600 1000 4
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mls -l mandelbrot_jtc_*.pgm times.txt[27mls -l mandelbrot_jtc_*.pgm times.txt
+[?2004l-rwxrwxrwx 1 root root 1126966 Aug 30 16:33 [0m[01;32mmandelbrot_jtc_openmp.pgm[0m
+-rwxrwxrwx 1 root root 1126966 Aug 30 16:34 [01;32mmandelbrot_jtc_pthreads1.pgm[0m
+-rwxrwxrwx 1 root root 1126966 Aug 30 16:34 [01;32mmandelbrot_jtc_pthreads2.pgm[0m
+-rwxrwxrwx 1 root root 1126966 Aug 30 16:33 [01;32mmandelbrot_jtc_serial.pgm[0m
+-rwxrwxrwx 1 root root      74 Aug 30 16:34 [01;32mtimes.txt[0m
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm[27m[A[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mcat times.txt[27mcat times.txt
+[?2004lSerial: 0.415703
+OpenMP: 0.213134
+Pthreads1: 0.224192
+Pthreads2: 0.156556
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 17 11 100 3[27m
+
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm[27m
+
+[7mcat times.txt[27m[A[A[A[A[A[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# ./mandelbrot 17 11 100 3
+
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm
+
+cat times.txt
+[?2004lSerial: 0.000041
+OpenMP: 0.000315
+Pthreads1: 0.001466
+Pthreads2: 0.001551
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mn
