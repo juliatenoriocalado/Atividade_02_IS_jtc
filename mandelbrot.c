@@ -19,9 +19,10 @@ typedef struct DadosThread {
     Mandelbrot *dados;
     int inicio_linha;
     int fim_linha;
+    int id_thread;
 } DadosThread;
 
-void *funcao_thread(void *arg){
+void *funcao_thread1(void *arg){
 
     DadosThread *dt = (DadosThread *) arg;
     
@@ -53,6 +54,38 @@ void *funcao_thread(void *arg){
             int intensidade = (int)(((double) iteracoes / dt->dados->max_interacoes) * 255.0);
             dt->imagem[indice] = intensidade;
 
+        }    
+    }
+    return NULL;
+}
+
+void *funcao_thread2(void *arg){
+    DadosThread *dt = (DadosThread *) arg;
+    for (int linha = dt->id_thread; linha < dt->dados->altura; linha += dt->dados->numeroDeThreads){
+        for (int coluna=0; coluna<dt->dados->largura; coluna++){
+            int indice = linha * dt->dados->largura + coluna;
+            double c_real = -2.0 + ((double) coluna/ (dt->dados->largura - 1)) * 3.0;
+            double c_imagem = -1.5 + ((double) linha / (dt->dados->altura - 1)) * 3.0;
+            double z_real = 0.0;
+            double z_imagem = 0.0;
+            int iteracoes = 0;
+            
+            while (iteracoes < dt->dados->max_interacoes){
+                double novo_real = (z_real * z_real) - (z_imagem * z_imagem) + c_real;
+                double novo_imagem = (2 * z_real * z_imagem) + c_imagem;
+
+                z_real = novo_real;
+                z_imagem = novo_imagem;
+
+                iteracoes++;
+
+                if ((z_real * z_real) + (z_imagem * z_imagem) > 4.0){ //se explodiu
+                    break;
+                }
+            }
+
+            int intensidade = (int)(((double) iteracoes / dt->dados->max_interacoes) * 255.0);
+            dt->imagem[indice] = intensidade;
         }    
     }
     return NULL;
@@ -355,7 +388,7 @@ int main(int argc, char *argv[]){
 
         args[i].fim_linha = (i + 1) * dados.altura / dados.numeroDeThreads;
 
-        int resultado = pthread_create(&threads[i], NULL, funcao_thread, &args[i]);
+        int resultado = pthread_create(&threads[i], NULL, funcao_thread1, &args[i]);
 
         if (resultado != 0){
             fprintf(stderr, "Erro ao criar thread.\n");
@@ -403,6 +436,72 @@ int main(int argc, char *argv[]){
     }
 
     fclose(arquivo);
+
+    //aqui dm baio
+
+    struct timespec inicio_thread2;
+    struct timespec fim_thread2;
+
+    clock_gettime(CLOCK_MONOTONIC, &inicio_thread2);
+
+    threads_criadas = 0;
+
+    for (int i=0; i<dados.numeroDeThreads; i++){
+
+        args[i].imagem = imagem;
+        args[i].dados = &dados;
+        args[i].id_thread = i;
+
+        int resultado = pthread_create(&threads[i], NULL, funcao_thread2, &args[i]);
+
+        if (resultado != 0){
+            fprintf(stderr, "Erro ao criar thread2.\n");
+            break;
+        }
+
+        threads_criadas++;
+            
+    }
+
+    for (int i = 0; i < threads_criadas; i++){
+        pthread_join(threads[i], NULL);
+    }
+
+    if (threads_criadas != dados.numeroDeThreads)
+    {free(imagem);
+    free(threads);
+    free(args);
+    exit(1);
+    }
+
+    clock_gettime(CLOCK_MONOTONIC, &fim_thread2);
+
+    double tempo_pthreads2 =
+        (fim_thread2.tv_sec - inicio_thread2.tv_sec) +
+        (fim_thread2.tv_nsec - inicio_thread2.tv_nsec) / 1000000000.0;
+
+    arquivo = fopen("mandelbrot_jtc_pthreads2.pgm", "w");
+
+        if (arquivo == NULL){
+        fprintf(stderr, "Erro ao abrir ou criar arquivo Pthreads2.\n");
+        free(imagem);
+        free(threads);
+        free(args);
+        exit(1);
+    }
+
+    for (int linha = 0; linha < dados.altura; linha++){
+        for (int coluna = 0; coluna < dados.largura; coluna++){
+            int indice = linha * dados.largura + coluna;
+            fprintf(arquivo, "%d ", imagem[indice]);
+        }
+
+        fprintf(arquivo, "\n");
+    }
+
+    fclose(arquivo);
+
+    // antes daqui
     
     FILE *arquivo_tempos;
     arquivo_tempos = fopen("times.txt", "w");
@@ -418,10 +517,11 @@ int main(int argc, char *argv[]){
     fprintf(arquivo_tempos, "Serial: %f\n", tempo_serial);
     fprintf(arquivo_tempos, "OpenMP: %f\n", tempo_openmp);
     fprintf(arquivo_tempos, "Pthreads1: %f\n", tempo_pthreads1);
+    fprintf(arquivo_tempos, "Pthreads2: %f\n", tempo_pthreads2);
     fclose(arquivo_tempos);
     free(imagem);
     free(threads);
     free(args);
 
     return 0;
-}
+} 
