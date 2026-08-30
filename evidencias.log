@@ -1177,4 +1177,340 @@ Pthreads2: 0.156556
 OpenMP: 0.000315
 Pthreads1: 0.001466
 Pthreads2: 0.001551
-[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mn
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mn[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 800 600 1000 4[27m./mandelbrot 800 600 1000 4
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mls -l mandelbrot_jtc_*.pgm times.txt[27mls -l mandelbrot_jtc_*.pgm times.txt
+[?2004l-rwxrwxrwx 1 root root 1126966 Aug 30 16:33 [0m[01;32mmandelbrot_jtc_openmp.pgm[0m
+-rwxrwxrwx 1 root root 1126966 Aug 30 16:34 [01;32mmandelbrot_jtc_pthreads1.pgm[0m
+-rwxrwxrwx 1 root root 1126966 Aug 30 16:34 [01;32mmandelbrot_jtc_pthreads2.pgm[0m
+-rwxrwxrwx 1 root root 1126966 Aug 30 16:33 [01;32mmandelbrot_jtc_serial.pgm[0m
+-rwxrwxrwx 1 root root      74 Aug 30 16:34 [01;32mtimes.txt[0m
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm[27m[A[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mcat times.txt[27mcat times.txt
+[?2004lSerial: 0.415703
+OpenMP: 0.213134
+Pthreads1: 0.224192
+Pthreads2: 0.156556
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 17 11 100 3[27m
+
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm[27m
+
+[7mcat times.txt[27m[A[A[A[A[A[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# ./mandelbrot 17 11 100 3
+
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm
+
+cat times.txt
+[?2004lSerial: 0.000041
+OpenMP: 0.000315
+Pthreads1: 0.001466
+Pthreads2: 0.001551
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threadlementação 2 - Threads# [7mls -l mandelbrot_jtc_*.pgm times.txt[27mls -l mandelbrot_jtc_*.pgm times.txt
+[?2004l-rwxrwxrwx 1 root root 1126966 Aug 30 16:33 [0m[01;32mmandelbrot_jtc_openmp.pgm[0m
+-rwxrwxrwx 1 root root 1126966 Aug 30 16:34 [01;32mmandelbrot_jtc_pthreads1.pgm[0m
+-rwxrwxrwx 1 root root 1126966 Aug 30 16:34 [01;32mmandelbrot_jtc_pthreads2.pgm[0m
+-rwxrwxrwx 1 root root 1126966 Aug 30 16:33 [01;32mmandelbrot_jtc_serial.pgm[0m
+-rwxrwxrwx 1 root root      74 Aug 30 16:34 [01;32mtimes.txt[0m
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm[27m[A[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mcat times.txt[27mcat times.txt
+[?2004lSerial: 0.415703
+OpenMP: 0.213134
+Pthreads1: 0.224192
+Pthreads2: 0.156556
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 17 11 100 3[27m
+
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm[27m
+
+[7mcat times.txt[27m[A[A[A[A[A[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# ./mandelbrot 17 11 100 3
+
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm
+
+cat times.txt
+[?2004lSerial: 0.000041
+OpenMP: 0.000315
+Pthreads1: 0.001466
+Pthreads2: 0.001551
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm[27m[A[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mcat times.txt[27mcat times.txt
+[?2004lSerial: 0.415703
+OpenMP: 0.213134
+Pthreads1: 0.224192
+Pthreads2: 0.156556
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 17 11 100 3[27m
+
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm[27m
+
+[7mcat times.txt[27m[A[A[A[A[A[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# ./mandelbrot 17 11 100 3
+
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm
+
+cat times.txt
+[?2004lSerial: 0.000041
+OpenMP: 0.000315
+Pthreads1: 0.001466
+Pthreads2: 0.001551
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# M[KMAKE C[K[K[K[K[K[Kmake clena[K[Ka [Kn
+[?2004lMakefile:3: *** missing separator.  Stop.
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implemers/julia/Implementação 2 - Threads# cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mcat times.txt[27mcat times.txt
+[?2004lSerial: 0.415703
+OpenMP: 0.213134
+Pthreads1: 0.224192
+Pthreads2: 0.156556
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 17 11 100 3[27m
+
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm[27m
+
+[7mcat times.txt[27m[A[A[A[A[A[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# ./mandelbrot 17 11 100 3
+
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm
+
+cat times.txt
+[?2004lSerial: 0.000041
+OpenMP: 0.000315
+Pthreads1: 0.001466
+Pthreads2: 0.001551
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# M[KMAKE C[K[K[K[K[K[Kmake clena[K[Ka [Kn
+[?2004lMakefile:3: *** missing separator.  Stop.
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCd]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# ./mandelbrot 17 11 100 3
+
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm
+
+cat times.txt
+[?2004lSerial: 0.000041
+OpenMP: 0.000315
+Pthreads1: 0.001466
+Pthreads2: 0.001551
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# M[KMAKE C[K[K[K[K[K[Kmake clena[K[Ka [Kn
+[?2004lMakefile:3: *** missing separator.  Stop.
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mmake clean[27mmake clean
+[?2004lrm -f mandelbrot *.o
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mmake[27mmake
+[?2004lgcc %(CFLAGS)t/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# M[KMAKE C[K[K[K[K[K[Kmake clena[K[Ka [Kn
+[?2004lMakefile:3: *** missing separator.  Stop.
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mmake clean[27mmake clean
+[?2004lrm -f mandelbrot *.o
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mmake[27mmake
+[?2004lgcc %(CFLAGS) mandelbrot -o mandelbrot 
+/bin/sh: 1: Syntax error: "(" unexpected
+make: *** [Makefile:10: mandelbrot] Error 2
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mmake clean[27m
+[7mmake[27m[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# make clean
+make
+[?2004lrm -f mandelbrot *.o
+gcc M[KMAKE C[K[K[K[K[K[Kmake clena[K[Ka [Kn
+[?2004lMakefile:3: *** missing separator.  Stop.
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mmake clean[27mmake clean
+[?2004lrm -f mandelbrot *.o
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mmake[27mmake
+[?2004lgcc %(CFLAGS) mandelbrot -o mandelbrot 
+/bin/sh: 1: Syntax error: "(" unexpected
+make: *** [Makefile:10: mandelbrot] Error 2
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mmake clean[27m
+[7mmake[27m[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# make clean
+make
+[?2004lrm -f mandelbrot *.o
+gcc -Wall -Wextra -std=c99 mandelbrot -o mandelbrot 
+[01m[Kgcc:[m[K [01;31m[Kfatal error: [m[Kinput file ‘[01m[Kmandelbrot[m[K’ is the same as output file
+compilation terminated.
+make: *** [Makefile:10: mandelbrot] Error 1
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# make clean[K clean[K[Kmake[K[7mmake clean[27m
+[7mmake[27m[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# make clean
+make
+[?2004lrm -f mandelbrot *.o
+gcc -Wall -Wextra -std=c99 mandelbrot.c -o mandelbrot 
+[01m[Kmandelbrot.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmandelbrot.c:250:5:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kclock_gettime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
+  250 |     [01;35m[Kclock_gettime[m[K(CLOCK_MONOTONIC, &inicio_serial);
+      |     [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[Kmandelbrot.c:250:19:[m[K [01;31m[Kerror: [m[K‘[01m[KCLOCK_MONOTONIC[m[K’ undeclared (first use in this function)
+  250 |     clock_gettime([01;31m[KCLOCK_MONOTONIC[m[K, &inicio_serial);
+      |                   [01;31m[K^~~~~~~~~~entação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mmake clean[27mmake clean
+[?2004lrm -f mandelbrot *.o
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mmake[27mmake
+[?2004lgcc %(CFLAGS) mandelbrot -o mandelbrot 
+/bin/sh: 1: Syntax error: "(" unexpected
+make: *** [Makefile:10: mandelbrot] Error 2
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mmake clean[27m
+[7mmake[27m[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# make clean
+make
+[?2004lrm -f mandelbrot *.o
+gcc -Wall -Wextra -std=c99 mandelbrot -o mandelbrot 
+[01m[Kgcc:[m[K [01;31m[Kfatal error: [m[Kinput file ‘[01m[Kmandelbrot[m[K’ is the same as output file
+compilation terminated.
+make: *** [Makefile:10: mandelbrot] Error 1
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# make clean[K clean[K[Kmake[K[7mmake clean[27m
+[7mmake[27m[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# make clean
+make
+[?2004lrm -f mandelbrot *.o
+gcc -Wall -Wextra -std=c99 mandelbrot.c -o mandelbrot 
+[01m[Kmandelbrot.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmandelbrot.c:250:5:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kclock_gettime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
+  250 |     [01;35m[Kclock_gettime[m[K(CLOCK_MONOTONIC, &inicio_serial);
+      |     [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[Kmandelbrot.c:250:19:[m[K [01;31m[Kerror: [m[K‘[01m[KCLOCK_MONOTONIC[m[K’ undeclared (first use in this function)
+  250 |     clock_gettime([01;31m[KCLOCK_MONOTONIC[m[K, &inicio_serial);
+      |                   [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[Kmandelbrot.c:250:19:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Kmandelbrot.c:309:[m[K [01;35m[Kwarning: [m[Kignoring ‘[01m[K#pragma omp parallel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunknown-pragmas-Wunknown-pragmas]8;;[m[K]
+  309 |     #pragma omp parallel for num_threads(dados.numeroDeThreads)
+      | 
+make: *** [Makefile:10: mandelbrot] Error 1
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mmake clean[27m
+[7mmake[27m[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# make clean
+makeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -Wall -Wextra -Wpedantic -fopenmp -pthread mandelbrot.c -o mandelbrot
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mmake clean[27mmake clean
+[?2004lrm -f mandelbrot *.o
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mmake[27mmake
+[?2004lgcc %(CFLAGS) mandelbrot -o mandelbrot 
+/bin/sh: 1: Syntax error: "(" unexpected
+make: *** [Makefile:10: mandelbrot] Error 2
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mmake clean[27m
+[7mmake[27m[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# make clean
+make
+[?2004lrm -f mandelbrot *.o
+gcc -Wall -Wextra -std=c99 mandelbrot -o mandelbrot 
+[01m[Kgcc:[m[K [01;31m[Kfatal error: [m[Kinput file ‘[01m[Kmandelbrot[m[K’ is the same as output file
+compilation terminated.
+make: *** [Makefile:10: mandelbrot] Error 1
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# make clean[K clean[K[Kmake[K[7mmake clean[27m
+[7mmake[27m[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# make clean
+make
+[?2004lrm -f mandelbrot *.o
+gcc -Wall -Wextra -std=c99 mandelbrot.c -o mandelbrot 
+[01m[Kmandelbrot.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmandelbrot.c:250:5:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kclock_gettime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
+  250 |     [01;35m[Kclock_gettime[m[K(CLOCK_MONOTONIC, &inicio_serial);
+      |     [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[Kmandelbrot.c:250:19:[m[K [01;31m[Kerror: [m[K‘[01m[KCLOCK_MONOTONIC[m[K’ undeclared (first use in this function)
+  250 |     clock_gettime([01;31m[KCLOCK_MONOTONIC[m[K, &inicio_serial);
+      |                   [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[Kmandelbrot.c:250:19:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Kmandelbrot.c:309:[m[K [01;35m[Kwarning: [m[Kignoring ‘[01m[K#pragma omp parallel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunknown-pragmas-Wunknown-pragmas]8;;[m[K]
+  309 |     #pragma omp parallel for num_threads(dados.numeroDeThreads)
+      | 
+make: *** [Makefile:10: mandelbrot] Error 1
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mmake clean[27m
+[7mmake[27m[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# make clean
+make
+[?2004lrm -f mandelbrot *.o
+gcc -Wall -Wextra -Wpedantic -std=c99 -fopenmp -pthread mandelbrot.c -o mandelbrot 
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/juli mandelbrot -o mandelbrot 
+/bin/sh: 1: Syntax error: "(" unexpected
+make: *** [Makefile:10: mandelbrot] Error 2
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mmake clean[27m
+[7mmake[27m[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# make clean
+make
+[?2004lrm -f mandelbrot *.o
+gcc -Wall -Wextra -std=c99 mandelbrot -o mandelbrot 
+[01m[Kgcc:[m[K [01;31m[Kfatal error: [m[Kinput file ‘[01m[Kmandelbrot[m[K’ is the same as output file
+compilation terminated.
+make: *** [Makefile:10: mandelbrot] Error 1
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# make clean[K clean[K[Kmake[K[7mmake clean[27m
+[7mmake[27m[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# make clean
+make
+[?2004lrm -f mandelbrot *.o
+gcc -Wall -Wextra -std=c99 mandelbrot.c -o mandelbrot 
+[01m[Kmandelbrot.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmandelbrot.c:250:5:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kclock_gettime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
+  250 |     [01;35m[Kclock_gettime[m[K(CLOCK_MONOTONIC, &inicio_serial);
+      |     [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[Kmandelbrot.c:250:19:[m[K [01;31m[Kerror: [m[K‘[01m[KCLOCK_MONOTONIC[m[K’ undeclared (first use in this function)
+  250 |     clock_gettime([01;31m[KCLOCK_MONOTONIC[m[K, &inicio_serial);
+      |                   [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[Kmandelbrot.c:250:19:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Kmandelbrot.c:309:[m[K [01;35m[Kwarning: [m[Kignoring ‘[01m[K#pragma omp parallel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunknown-pragmas-Wunknown-pragmas]8;;[m[K]
+  309 |     #pragma omp parallel for num_threads(dados.numeroDeThreads)
+      | 
+make: *** [Makefile:10: mandelbrot] Error 1
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mmake clean[27m
+[7mmake[27m[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# make clean
+make
+[?2004lrm -f mandelbrot *.o
+gcc -Wall -Wextra -Wpedantic -std=c99 -fopenmp -pthread mandelbrot.c -o mandelbrot 
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 800 600 1000 4[27m./mandelbrot 800 600 1000 4
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm[27m
+[7mcat times.txt[27m[A[A[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm
+cat times.txt
+[?2004lSerial: 0.436295
+OpenM-Wall -Wextra -std=c99 mandelbrot -o mandelbrot 
+[01m[Kgcc:[m[K [01;31m[Kfatal error: [m[Kinput file ‘[01m[Kmandelbrot[m[K’ is the same as output file
+compilation terminated.
+make: *** [Makefile:10: mandelbrot] Error 1
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [K]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# make clean[K clean[K[Kmake[K[7mmake clean[27m
+[7mmake[27m[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# make clean
+make
+[?2004lrm -f mandelbrot *.o
+gcc -Wall -Wextra -std=c99 mandelbrot.c -o mandelbrot 
+[01m[Kmandelbrot.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmandelbrot.c:250:5:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kclock_gettime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
+  250 |     [01;35m[Kclock_gettime[m[K(CLOCK_MONOTONIC, &inicio_serial);
+      |     [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[Kmandelbrot.c:250:19:[m[K [01;31m[Kerror: [m[K‘[01m[KCLOCK_MONOTONIC[m[K’ undeclared (first use in this function)
+  250 |     clock_gettime([01;31m[KCLOCK_MONOTONIC[m[K, &inicio_serial);
+      |                   [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[Kmandelbrot.c:250:19:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Kmandelbrot.c:309:[m[K [01;35m[Kwarning: [m[Kignoring ‘[01m[K#pragma omp parallel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunknown-pragmas-Wunknown-pragmas]8;;[m[K]
+  309 |     #pragma omp parallel for num_threads(dados.numeroDeThreads)
+      | 
+make: *** [Makefile:10: mandelbrot] Error 1
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mmake clean[27m
+[7mmake[27m[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# make clean
+make
+[?2004lrm -f mandelbrot *.o
+gcc -Wall -Wextra -Wpedantic -std=c99 -fopenmp -pthread mandelbrot.c -o mandelbrot 
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 800 600 1000 4[27m./mandelbrot 800 600 1000 4
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm[27m
+[7mcat times.txt[27m[A[A[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm
+cat times.txt
+[?2004lSerial: 0.436295
+OpenMP: 0.219688
+Pthreads1: 0.221537
+Pthreads2: 0.117803
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgit add Makefile[27m
+[7mgit commit -m "Adiciona Makefile para compilacao do Mandelbrot com OpenMP e Pthreads"[27m[Agit add Makefile
+git commit -m "Adiciona Makefile para compilacao do Mandelbrot com OpenMP e Pthreads"
+[?2004l[main a70c296] Adiciona Makefile para compilacao do Mandelbrot com OpenMP e Pthreads
+ Committer: root <root@PCdeJlia.localdomain>
+Your name and ema
