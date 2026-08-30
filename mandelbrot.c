@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <errno.h> 
 #include <limits.h>
+#include <time.h>
+#include <stdint.h>
 
 typedef struct mandelbrot{
     int largura;
@@ -50,10 +52,9 @@ int main(int argc, char *argv[]){
         //estourou passou do limite
     }
 
-    if (valor <= 0 || valor > INT_MAX){
-        fprintf(stderr, "Largura inválida.\n");
+    if (valor <= 1 || valor > INT_MAX){
+        fprintf(stderr, "Largura invalida.\n");
         exit(1);
-        //os parametros nao podem ser negativos nem passar do maximo
     }
 
     dados.largura = (int) valor;
@@ -79,10 +80,9 @@ int main(int argc, char *argv[]){
         //estourou passou do limite
     }
 
-    if (valor <= 0 || valor > INT_MAX){
+    if (valor <= 1 || valor > INT_MAX){
         fprintf(stderr, "Altura inválida.\n");
         exit(1);
-        //atingiu o máximo
     }
 
     dados.altura = (int) valor;
@@ -97,13 +97,13 @@ int main(int argc, char *argv[]){
     }
 
     if (*fim != '\0'){
-        fprintf(stderr, "maximo de iteracoes.\n");
+        fprintf(stderr, "maximo de iteracoes invalido.\n");
         exit(1);
         //sobraram caracteres que nao foram convertidos na leitura
     }
 
     if (errno == ERANGE){
-        fprintf(stderr, "maximo de iteracoes.\n");
+        fprintf(stderr, "maximo de iteracoes invalido.\n");
         exit(1);
         //estourou passou do limite
     }
@@ -121,37 +121,52 @@ int main(int argc, char *argv[]){
     valor = strtol(argv[4], &fim, 10);
 
     if (fim == argv[4]){ //fim == argv[4] não conseguiu ler nem o primeiro caractere
-        fprintf(stderr, "numero de threads errado.\n");
+        fprintf(stderr, "Numero de threads invalido.\n");
         exit(1);
         //não conseguiu converter
     }
 
     if (*fim != '\0'){
-        fprintf(stderr, "numero de threads errado.\n");
+        fprintf(stderr, "Numero de threads invalido.\n");
         exit(1);
     }
 
     if (errno == ERANGE){
-        fprintf(stderr, "numero de threads errado.\n");
+        fprintf(stderr, "Numero de threads invalido.\n");
         exit(1);
         //estourou passou do limite
     }
 
     if (valor <= 0 || valor > INT_MAX){
-        fprintf(stderr, "numero de threads errado.\n");
+        fprintf(stderr, "Numero de threads invalido.\n");
         exit(1);
-        //atingiu o máximo
     }
 
     dados.numeroDeThreads = (int) valor;
 
+    if ((size_t) dados.largura > SIZE_MAX / (size_t) dados.altura){
+        fprintf(stderr, "A imagem ficou muito grande.\n");
+        exit(1);
+    }
+
     size_t quantidade_pixels = (size_t) dados.largura * dados.altura;
+
+    if (quantidade_pixels > SIZE_MAX / sizeof(int)){
+        fprintf(stderr, "Imagem grande demais para alocar o espaco.\n");
+        exit(1);
+    }
+
     int *imagem = malloc(quantidade_pixels * sizeof(int));
 
     if (imagem == NULL){
         fprintf(stderr, "erro ao alocar memoria.\n");
         exit(1);
     }
+     
+    struct timespec inicio;
+    struct timespec fim_tempo;
+
+    clock_gettime(CLOCK_MONOTONIC, &inicio);
 
     for (int linha=0; linha<dados.altura; linha++){
         for (int coluna=0; coluna<dados.largura; coluna++){
@@ -181,29 +196,43 @@ int main(int argc, char *argv[]){
             int intensidade = (int)(((double) iteracoes / dados.max_interacoes) * 255.0);
             imagem[indice] = intensidade;
 
-        }
-        
+        }    
     }
 
+    clock_gettime(CLOCK_MONOTONIC, &fim_tempo);
+
+    double tempo_serial =
+        (fim_tempo.tv_sec - inicio.tv_sec) +
+        (fim_tempo.tv_nsec - inicio.tv_nsec) / 1000000000.0;
+
     FILE *arquivo;
-
     arquivo = fopen("mandelbrot_jtc_serial.pgm", "w");
-
     if (arquivo == NULL){
-        fprintf(stderr, "erro ao abrir ou ao criar arquivo.\n");
+        fprintf(stderr, "Erro ao abrir ou criar arquivo.\n");
         free(imagem);
         exit(1);
     }
-
-    for (int linha=0; linha<dados.altura; linha++){
-        for (int coluna=0; coluna<dados.largura; coluna++){
-            int indice = (linha * dados.largura) + coluna;
+    for (int linha = 0; linha < dados.altura; linha++){
+        for (int coluna = 0; coluna < dados.largura; coluna++){
+            int indice = linha * dados.largura + coluna;
             fprintf(arquivo, "%d ", imagem[indice]);
         }
         fprintf(arquivo, "\n");
     }
 
     fclose(arquivo);
+
+    FILE *arquivo_tempos;
+    arquivo_tempos = fopen("times.txt", "w");
+
+    if (arquivo_tempos == NULL){
+        fprintf(stderr, "Erro ao abrir ou criar times.txt.\n");
+        free(imagem);
+        exit(1);
+    }
+
+    fprintf(arquivo_tempos, "Serial: %f\n", tempo_serial);
+    fclose(arquivo_tempos);
     free(imagem);
 
     return 0;
