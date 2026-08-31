@@ -1513,4 +1513,117 @@ Pthreads2: 0.117803
 git commit -m "Adiciona Makefile para compilacao do Mandelbrot com OpenMP e Pthreads"
 [?2004l[main a70c296] Adiciona Makefile para compilacao do Mandelbrot com OpenMP e Pthreads
  Committer: root <root@PCdeJlia.localdomain>
-Your name and ema
+Your name and ema1;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
+  250 |     [01;35m[Kclock_gettime[m[K(CLOCK_MONOTONIC, &inicio_serial);
+      |     [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[Kmandelbrot.c:250:19:[m[K [01;31m[Kerror: [m[K‘[01m[KCLOCK_MONOTONIC[m[K’ undeclared (first use in this function)
+  250 |     clock_gettime([01;31m[KCLOCK_MONOTONIC[m[K, &inicio_serial);
+      |                   [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[Kmandelbrot.c:250:19:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Kmandelbrot.c:309:[m[K [01;35m[Kwarning: [m[Kignoring ‘[01m[K#pragma omp parallel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunknown-pragmas-Wunknown-pragmas]8;;[m[K]
+  309 |     #pragma omp parallel for num_threads(dados.numeroDeThreads)
+      | 
+make: *** [Makefile:10: mandelbrot] Error 1
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mmake clean[27m
+[7mmake[27m[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# make clean
+make
+[?2004lrm -f mandelbrot *.o
+gcc -Wall -Wextra -Wpedantic -std=c99 -fopenmp -pthread mandelbrot.c -o mandelbrot 
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 800 600 1000 4[27m./mandelbrot 800 600 1000 4
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm[27m
+[7mcat times.txt[27m[A[A[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm
+cat times.txt
+[?2004lSerial: 0.436295
+OpenMP: 0.219688
+Pthreads1: 0.221537
+Pthreads2: 0.117803
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgit add Makefile[27m
+[7mgit commit -m "Adiciona Makefile para compilacao do Mandelbrot com OpenMP e Pthreads"[27m[Agit add Makefile
+git commit -m "Adiciona Makefile para compilacao do Mandelbrot com OpenMP e Pthreads"
+[?2004l[main a70c296] Adiciona Makefile para compilacao do Mandelbrot com OpenMP e Pthreads
+ Committer: root <root@PCdeJlia.localdomain>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 13 insertions(+)
+ create mode 100644 Makefile
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgit add evidencias.log[27m
+[7mgit commit -m "Atualiza as evidencias com a validacao do Makefile"[27m
+[7mgit push[27m[A[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# git add evidencias.log
+git commit -m "Atualiza as evidencias com a validacao do Makefile"
+git push
+[?2004l[main b068bab] Atualiza as~~~~~[m[K
+[01m[Kmandelbrot.c:250:19:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Kmandelbrot.c:309:[m[K [01;35m[Kwarning: [m[Kignoring ‘[01m[K#pragma omp parallel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunknown-pragmas-Wunknown-pragmas]8;;[m[K]
+  309 |     #pragma omp parallel for num_threads(dados.numeroDeThreads)
+      | 
+make: *** [Makefile:10: mandelbrot] Error 1
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mmake clean[27m
+[7mmake[27m[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# make clean
+make
+[?2004lrm -f mandelbrot *.o
+gcc -Wall -Wextra -Wpedantic -std=c99 -fopenmp -pthread mandelbrot.c -o mandelbrot 
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7m./mandelbrot 800 600 1000 4[27m./mandelbrot 800 600 1000 4
+[?2004l[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm[27m
+[7mcmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm[27m
+[7mcat times.txt[27m[A[A[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_openmp.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads1.pgm
+cmp mandelbrot_jtc_serial.pgm mandelbrot_jtc_pthreads2.pgm
+cat times.txt
+[?2004lSerial: 0.436295
+OpenMP: 0.219688
+Pthreads1: 0.221537
+Pthreads2: 0.117803
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgit add Makefile[27m
+[7mgit commit -m "Adiciona Makefile para compilacao do Mandelbrot com OpenMP e Pthreads"[27m[Agit add Makefile
+git commit -m "Adiciona Makefile para compilacao do Mandelbrot com OpenMP e Pthreads"
+[?2004l[main a70c296] Adiciona Makefile para compilacao do Mandelbrot com OpenMP e Pthreads
+ Committer: root <root@PCdeJlia.localdomain>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 13 insertions(+)
+ create mode 100644 Makefile
+[?2004h]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# [7mgit add evidencias.log[27m
+[7mgit commit -m "Atualiza as evidencias com a validacao do Makefile"[27m
+[7mgit push[27m[A[A]0;root@PCdeJlia: /mnt/c/Users/julia/Implementação 2 - Threadsroot@PCdeJlia:/mnt/c/Users/julia/Implementação 2 - Threads# git add evidencias.log
+git commit -m "Atualiza as evidencias com a validacao do Makefile"
+git push
+[?2004l[main b068bab] Atualiza as evidencias com a validacao do Makefile
+ Committer: root <root@PCdeJlia.localdomain>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 
